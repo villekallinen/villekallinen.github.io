@@ -1,34 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<title>
-GPU-Accelerated Climate Model | Ville Kallinen
-</title>
-
-<link rel="stylesheet" href="../style.css">
-
-</head>
-
-<body>
-
-<main class="section project-page">
-
-<a class="project-link" href="../index.html#projects">
-← Back to Projects
-</a>
-
 <p class="project-type">
+
 High Performance Computing · Scientific Computing
+
 </p>
+
 
 <h1 class="project-page-title">
 
@@ -37,15 +12,20 @@ Post-Processing
 
 </h1>
 
+
 <p class="project-introduction">
 
-This project focused on accelerating the post-processing of
-large climate model datasets by utilizing GPU computing.
-The objective was to replace computationally expensive CPU
-calculations with CUDA-enabled GPU implementations using
-CuPy while maintaining numerical correctness.
+This project investigated how GPU computing can accelerate the
+post-processing of large atmospheric climate model datasets.
+The work focused on replacing computationally intensive CPU
+operations with CUDA-enabled GPU implementations using the
+CuPy library while maintaining numerical correctness.
+
+The implementation was developed and evaluated on the CSC
+Mahti supercomputer using real climate simulation data.
 
 </p>
+
 
 <div class="project-summary">
 
@@ -74,8 +54,8 @@ CuPy while maintaining numerical correctness.
 </tr>
 
 <tr>
-<td><strong>Technologies</strong></td>
-<td>CUDA, CuPy, NumPy, xarray</td>
+<td><strong>GPU Framework</strong></td>
+<td>CUDA / CuPy</td>
 </tr>
 
 <tr>
@@ -84,130 +64,146 @@ CuPy while maintaining numerical correctness.
 </tr>
 
 <tr>
-<td><strong>Objective</strong></td>
-<td>Accelerate climate model post-processing using GPU parallelization</td>
+<td><strong>Application</strong></td>
+<td>Climate Model Post-Processing</td>
 </tr>
 
 </table>
 
 </div>
 
+
 <img
 class="project-main-image"
 src="../images/gpu-climate/hero.png"
-alt="GPU Climate Project"
+alt="GPU Climate Computing"
 >
 
-<h2>Project Goal</h2>
+
+<h2>Project Overview</h2>
 
 <p>
 
-Global climate model simulations generate extremely large
-datasets whose post-processing can require several minutes or
-hours of computation. The goal of this project was to
-parallelize the existing CPU implementation and evaluate the
-performance benefits of GPU computing.
+Climate model simulations generate extremely large datasets
+that require substantial computational resources during
+post-processing. This project explored how GPU acceleration
+can reduce processing time by executing numerical operations
+in parallel using NVIDIA CUDA-enabled hardware.
 
 </p>
+
+<p>
+
+The implementation preserves numerical correctness while
+significantly reducing execution time for computationally
+intensive tasks.
+
+</p>
+
 
 <h2>My Contribution</h2>
 
 <ul>
 
-<li>Implemented GPU versions of numerical algorithms using CuPy.</li>
+<li>Converted NumPy-based algorithms to CuPy implementations.</li>
 
-<li>Converted NumPy-based computations into CUDA-compatible code.</li>
+<li>Designed GPU memory management.</li>
 
-<li>Designed GPU memory management strategy.</li>
+<li>Implemented CPU–GPU data transfer.</li>
 
-<li>Implemented GPU data transfer pipeline.</li>
+<li>Optimized numerical calculations for parallel execution.</li>
 
-<li>Performed performance benchmarking.</li>
+<li>Benchmarked CPU and GPU performance.</li>
 
-<li>Validated GPU results against CPU implementation.</li>
+<li>Validated numerical correctness.</li>
 
 </ul>
+
 
 <h2>GPU Processing Pipeline</h2>
 
 <ol>
 
-<li>Import NetCDF climate data.</li>
+<li>Load NetCDF climate datasets.</li>
 
 <li>Transfer one time step to GPU memory.</li>
 
-<li>Execute CUDA kernels via CuPy.</li>
+<li>Execute parallel computations using CuPy.</li>
 
 <li>Transfer results back to CPU.</li>
 
-<li>Clear GPU memory.</li>
+<li>Release GPU memory.</li>
 
-<li>Repeat for all time steps.</li>
+<li>Repeat for the complete dataset.</li>
 
 </ol>
 
-<h2>Results</h2>
 
-<p>
-
-GPU computing significantly accelerated the complete
-post-processing workflow. The greatest performance gains were
-achieved when several atmospheric variables were computed
-simultaneously, whereas individual computations were limited
-by GPU memory transfer overhead.
-
-</p>
+<h2>Methods</h2>
 
 <div class="tags">
 
 <span>Python</span>
+
 <span>CUDA</span>
+
 <span>CuPy</span>
+
+<span>NumPy</span>
+
+<span>xarray</span>
+
 <span>GPU Computing</span>
-<span>HPC</span>
+
+<span>Parallel Programming</span>
+
 <span>Scientific Computing</span>
 
 </div>
 
-<h2>Skills Demonstrated</h2>
 
-<ul>
-
-<li>GPU Programming</li>
-
-<li>CUDA Computing</li>
-
-<li>Scientific Computing</li>
-
-<li>Performance Optimization</li>
-
-<li>Parallel Programming</li>
-
-<li>Python</li>
-
-<li>Large Dataset Processing</li>
-
-<li>Numerical Computing</li>
-
-</ul>
-
-<h2>Future Improvements</h2>
+<h2>Project Outcome</h2>
 
 <p>
 
-The implementation could be further optimized by processing
-larger data chunks on GPUs with more memory, reducing memory
-transfer overhead and improving computational throughput.
+GPU acceleration substantially reduced the execution time of
+the post-processing workflow. Performance improvements were
+most significant when several atmospheric variables were
+processed simultaneously, while individual computations were
+limited by memory transfer overhead.
 
 </p>
 
-</main>
 
-<footer>
+<h2>Skills Demonstrated</h2>
 
-<p>© 2026 Ville Kallinen</p>
+<div class="tags">
 
-</footer>
+<span>GPU Programming</span>
 
-</body>
-</html>
+<span>CUDA</span>
+
+<span>Python</span>
+
+<span>Scientific Computing</span>
+
+<span>High Performance Computing</span>
+
+<span>Performance Optimization</span>
+
+<span>Parallel Programming</span>
+
+<span>Large Dataset Processing</span>
+
+</div>
+
+
+<h2>Future Work</h2>
+
+<p>
+
+Future work could investigate multi-GPU execution, optimized
+memory management strategies and scaling the implementation to
+larger climate datasets.
+
+</p>
