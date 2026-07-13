@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Hengitystaajuuden arviointi | Ville Kallinen
+    </title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+<main class="section project-page">
+
+    <a class="project-link" href="../index.html#projects">
+        ← Takaisin projekteihin
+    </a>
+
+
+    <p class="project-type">
+        Diplomityö · Signaalinkäsittely
+    </p>
+
+
+    <h1 class="project-page-title">
+
+        Hengitystaajuuden arviointi
+        älypuhelimen kiihtyvyysanturista
+
+    </h1>
+
+
+    <p class="project-introduction">
+
+        Diplomityössä kehitetään algoritmi, joka arvioi henkilön
+        hengitystaajuuden rintakehälle asetetun älypuhelimen
+        kolmiakselisesta kiihtyvyysdatasta.
+        Tuloksia verrataan BIOPAC MP150 -hengitysvyöhön,
+        jota käytetään mittausten vertailuarvona.
+    
+    </p>
+    
+    
+    <div class="project-summary">
+    
+        <h2>Projektin yhteenveto</h2>
+    
+        <table>
+    
+            <tr>
+                <td><strong>Projekti</strong></td>
+                <td>Diplomityö</td>
+            </tr>
+    
+            <tr>
+                <td><strong>Yliopisto</strong></td>
+                <td>Itä-Suomen yliopisto</td>
+            </tr>
+    
+            <tr>
+                <td><strong>Ajankohta</strong></td>
+                <td>2025–2026</td>
+            </tr>
+    
+            <tr>
+                <td><strong>Ohjelmointikieli</strong></td>
+                <td>MATLAB</td>
+            </tr>
+    
+            <tr>
+                <td><strong>Mittauslaitteet</strong></td>
+                <td>
+                    Älypuhelin, BIOPAC MP150,
+                    Polar H10, Polar Verity Sense
+                </td>
+            </tr>
+    
+            <tr>
+                <td><strong>Päämenetelmät</strong></td>
+                <td>
+                    PCA, autokorrelaatio,
+                    digitaalinen suodatus,
+                    huippujen tunnistus
+                </td>
+            </tr>
+    
+            <tr>
+                <td><strong>Tavoite</strong></td>
+                <td>
+                    Hengitystaajuuden arviointi
+                    kiihtyvyysanturidatasta
+                </td>
+            </tr>
+    
+        </table>
+    
+    </div>
+    
+    
+    <img
+        class="project-main-image"
+        src="../../images/respiration-result.png"
+        alt="Hengitystaajuuden arviointi kiihtyvyysdatasta"
+    >
+
+
+    <h2>Projektin tavoite</h2>
+
+    <p>
+
+        Hengitys aiheuttaa pieniä liikkeitä rintakehään,
+        jotka voidaan havaita älypuhelimen kiihtyvyysanturilla.
+        Haasteena on erottaa hengityksestä aiheutuva liike
+        kohinasta, kehon liikkeistä sekä anturin asennon muutoksista.
+
+    </p>
+
+    <p>
+
+        Projektin tavoitteena on kehittää luotettava
+        signaalinkäsittelyyn perustuva menetelmä,
+        joka pystyy arvioimaan hengitystaajuuden
+        erilaisissa mittaustilanteissa.
+
+    </p>
+
+
+    <h2>Oma roolini</h2>
+
+    <ul>
+
+        <li>Kehitin koko signaalinkäsittelyalgoritmin.</li>
+
+        <li>Toteutin kaikki algoritmit MATLABilla.</li>
+
+        <li>Kehitin epätasaisesti näytteistetyn kiihtyvyysdatan
+            interpolointimenetelmän.</li>
+
+        <li>Toteutin PCA-pohjaisen hengityssignaalin muodostamisen.</li>
+
+        <li>Kehitin autokorrelaatioon perustuvan hengityssyklien
+            tunnistusmenetelmän.</li>
+
+        <li>Suunnittelin adaptiivisen huippujen tunnistuksen.</li>
+
+        <li>Kehitin hengitystaajuuden luotettavuusarvion
+            (confidence score).</li>
+
+        <li>Vertasin algoritmin tuloksia BIOPAC-referenssimittauksiin.</li>
+
+    </ul>
+
+
+    <h2>Signaalinkäsittelyn vaiheet</h2>
+
+    <ol>
+
+        <li>Kiihtyvyysdatan lukeminen.</li>
+
+        <li>Epätasaisen näytteenoton interpolointi.</li>
+
+        <li>Signaalin esikäsittely ja suodatus.</li>
+
+        <li>Pääkomponenttianalyysi (PCA).</li>
+
+        <li>Hengityssignaalin muodostaminen.</li>
+
+        <li>Autokorrelaatioanalyysi.</li>
+
+        <li>Huippujen tunnistus.</li>
+
+        <li>Hengityssyklien tunnistus.</li>
+
+        <li>Hengitystaajuuden laskeminen.</li>
+
+        <li>Luotettavuusarvon laskeminen.</li>
+
+    </ol>
+
+
+    <h2>Käytetyt menetelmät</h2>
+
+    <div class="tags">
+
+        <span>MATLAB</span>
+
+        <span>Signaalinkäsittely</span>
+
+        <span>PCA</span>
+
+        <span>Autokorrelaatio</span>
+
+        <span>Digitaaliset suodattimet</span>
+
+        <span>Huippujen tunnistus</span>
+
+        <span>Interpolointi</span>
+
+        <span>Tilastollinen analyysi</span>
+
+    </div>
+
+
+    <h2>Tulokset</h2>
+
+    <p>
+
+        Kehitetty algoritmi muodostaa hengityssignaalin
+        kolmiakselisesta kiihtyvyysdatasta ja arvioi
+        hengitystaajuuden hyödyntämällä
+        PCA:ta, signaalin esikäsittelyä sekä
+        autokorrelaatioon perustuvaa hengityssyklien tunnistusta.
+
+    </p>
+
+    <p>
+
+        Algoritmin suorituskyky arvioidaan vertaamalla
+        laskettua hengitystaajuutta BIOPAC-hengitysvyön
+        mittauksiin.
+
+    </p>
+
+
+    <img
+        class="project-main-image"
+        src="../../images/respiration-comparison.png"
+        alt="Vertailu BIOPAC-referenssiin"
+    >
+
+
+    <h2>Käytetyt teknologiat</h2>
+
+    <div class="tags">
+
+        <span>MATLAB</span>
+
+        <span>PCA</span>
+
+        <span>BIOPAC</span>
+
+        <span>Kiihtyvyysanturi</span>
+
+        <span>Algoritmikehitys</span>
+
+        <span>Tieteellinen laskenta</span>
+
+    </div>
+
+
+    <h2>Jatkokehitys</h2>
+
+    <p>
+
+        Tulevaisuudessa algoritmia voidaan kehittää
+        entistä paremmin liikettä sietäväksi,
+        testata suuremmilla aineistoilla sekä
+        toteuttaa reaaliaikainen versio
+        mobiililaitteille.
+
+    </p>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Ville Kallinen
+    </p>
+
+</footer>
+
+</body>
+
+</html>
