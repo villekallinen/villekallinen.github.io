@@ -386,4 +386,66 @@ footer {
     .language-switch a:hover {
         background: var(--surface-alternative);
     }
+
+    .project-summary {
+
+        margin: 50px 0;
+    
+        padding: 28px;
+    
+        border-radius: 14px;
+    
+        background: white;
+    
+        border: 1px solid var(--border);
+    
+        box-shadow: var(--shadow);
+    
+    }
+    
+    .project-summary h2 {
+    
+        margin-top: 0;
+    
+        margin-bottom: 24px;
+    
+    }
+    
+    .project-summary table {
+    
+        width: 100%;
+    
+        border-collapse: collapse;
+    
+    }
+    
+    .project-summary tr {
+    
+        border-bottom: 1px solid #e6e6e6;
+    
+    }
+    
+    .project-summary tr:last-child {
+    
+        border-bottom: none;
+    
+    }
+    
+    .project-summary td {
+    
+        padding: 14px 6px;
+    
+        vertical-align: top;
+    
+    }
+    
+    .project-summary td:first-child {
+    
+        width: 220px;
+    
+        font-weight: 600;
+    
+    }
+    
+    
 }
