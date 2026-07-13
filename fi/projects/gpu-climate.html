@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+
+Ilmastomallin GPU-rinnakkaistaminen | Ville Kallinen
+
+</title>
+
+<link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+<main class="section project-page">
+
+<a class="project-link" href="../index.html#projects">
+
+← Takaisin projekteihin
+
+</a>
+
+<p class="project-type">
+
+Suurteholaskenta · Tieteellinen laskenta
+
+</p>
+
+<h1 class="project-page-title">
+
+Ilmastomallin jälkikäsittelyn
+GPU-rinnakkaistaminen
+
+</h1>
+
+<p class="project-introduction">
+
+Projektissa rinnakkaistettiin ilmastomallin
+jälkikäsittelylaskenta NVIDIA GPU:lle hyödyntämällä
+CUDA:a ja CuPy-kirjastoa. Tavoitteena oli nopeuttaa
+suurten ilmastoaineistojen numeerista laskentaa
+säilyttäen laskennan oikeellisuus.
+
+</p>
+
+<div class="project-summary">
+
+<h2>Projektin yhteenveto</h2>
+
+<table>
+
+<tr>
+
+<td><strong>Projekti</strong></td>
+
+<td>Tieteellisen laskennan projektityö</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Yliopisto</strong></td>
+
+<td>Itä-Suomen yliopisto</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Ajankohta</strong></td>
+
+<td>2026</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Ohjelmointikieli</strong></td>
+
+<td>Python</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Teknologiat</strong></td>
+
+<td>CUDA, CuPy, NumPy, xarray</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Alusta</strong></td>
+
+<td>CSC Mahti -supertietokone</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Tavoite</strong></td>
+
+<td>Ilmastomallin jälkikäsittelyn nopeuttaminen GPU-rinnakkaistamisella</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<img
+class="project-main-image"
+src="../../images/gpu-climate/hero.png"
+alt="GPU-rinnakkaistaminen"
+>
+
+<h2>Projektin tavoite</h2>
+
+<p>
+
+Ilmastomallien simuloinnit tuottavat erittäin suuria
+aineistoja, joiden jälkikäsittely on laskennallisesti
+vaativaa. Projektin tavoitteena oli siirtää
+CPU-pohjainen laskenta GPU:lle ja arvioida saavutettavat
+suorituskykyhyödyt.
+
+</p>
+
+<h2>Oma roolini</h2>
+
+<ul>
+
+<li>Toteutin GPU-version CuPy-kirjastolla.</li>
+
+<li>Muutin NumPy-laskennan CUDA-yhteensopivaksi.</li>
+
+<li>Suunnittelin GPU-muistinhallinnan.</li>
+
+<li>Toteutin datansiirtoputken CPU:n ja GPU:n välille.</li>
+
+<li>Vertailin CPU- ja GPU-suorituskykyä.</li>
+
+<li>Varmistin tulosten oikeellisuuden.</li>
+
+</ul>
+
+<h2>GPU-laskennan vaiheet</h2>
+
+<ol>
+
+<li>Ilmastodatan lukeminen.</li>
+
+<li>Datan siirto GPU-muistiin.</li>
+
+<li>CUDA-laskenta CuPy-kirjastolla.</li>
+
+<li>Tulosten siirto takaisin CPU:lle.</li>
+
+<li>GPU-muistin vapautus.</li>
+
+<li>Prosessin toistaminen kaikille aikastepeille.</li>
+
+</ol>
+
+<h2>Tulokset</h2>
+
+<p>
+
+GPU-rinnakkaistaminen nopeutti koko
+jälkikäsittelyprosessia merkittävästi.
+Suurin hyöty saavutettiin laskettaessa useita
+suureita samanaikaisesti, kun taas yksittäisten
+suureiden suorituskykyä rajoitti GPU-muistin
+siirtokustannus.
+
+</p>
+
+<div class="tags">
+
+<span>Python</span>
+
+<span>CUDA</span>
+
+<span>CuPy</span>
+
+<span>GPU-ohjelmointi</span>
+
+<span>HPC</span>
+
+<span>Tieteellinen laskenta</span>
+
+</div>
+
+<h2>Osaaminen</h2>
+
+<ul>
+
+<li>GPU-ohjelmointi</li>
+
+<li>CUDA</li>
+
+<li>Python</li>
+
+<li>Suurteholaskenta</li>
+
+<li>Rinnakkaisohjelmointi</li>
+
+<li>Suorituskyvyn optimointi</li>
+
+<li>Tieteellinen laskenta</li>
+
+<li>Suurten aineistojen käsittely</li>
+
+</ul>
+
+<h2>Jatkokehitys</h2>
+
+<p>
+
+Suorituskykyä voidaan edelleen parantaa hyödyntämällä
+enemmän GPU-muistia, jolloin suurempia datalohkoja voidaan
+käsitellä kerralla ja muistinsiirtojen aiheuttama
+pullonkaula pienenee.
+
+</p>
+
+</main>
+
+<footer>
+
+<p>© 2026 Ville Kallinen</p>
+
+</footer>
+
+</body>
+
+</html>
