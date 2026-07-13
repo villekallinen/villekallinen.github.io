@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Respiratory Rate Estimation | Ville Kallinen
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<main class="section project-page">
+
+    <a class="project-link" href="../index.html#projects">
+        ← Back to Projects
+    </a>
+
+    <p class="project-type">
+        Master's Thesis · Signal Processing
+    </p>
+
+    <h1 class="project-page-title">
+        Respiratory Rate Estimation from Smartphone Accelerometer Data
+    </h1>
+
+    <p class="project-introduction">
+
+        This project focuses on developing an algorithm that estimates
+        respiratory rate from three-axis accelerometer data recorded with a
+        smartphone placed on the subject's chest. The estimated respiratory
+        rate is validated against a reference respiratory belt
+        (BIOPAC MP150).
+
+    </p>
+
+
+    <img
+        class="project-main-image"
+        src="../images/respiration-result.png"
+        alt="Respiratory rate estimation from accelerometer data"
+    >
+
+
+    <h2>Overview</h2>
+
+    <p>
+
+        Respiration causes subtle movements of the chest that can be detected
+        by a smartphone accelerometer. However, these movements are often
+        masked by body motion, sensor orientation changes and measurement
+        noise.
+
+    </p>
+
+    <p>
+
+        The objective of this work is to develop a robust signal processing
+        pipeline capable of extracting respiratory information from raw
+        accelerometer measurements and estimating respiratory rate under
+        different measurement conditions.
+
+    </p>
+
+
+    <h2>My Contribution</h2>
+
+    <ul>
+
+        <li>Designed the complete signal processing pipeline.</li>
+
+        <li>Implemented all algorithms in MATLAB.</li>
+
+        <li>Developed preprocessing methods for non-uniformly sampled
+            accelerometer data.</li>
+
+        <li>Implemented PCA-based respiratory signal extraction.</li>
+
+        <li>Developed adaptive peak detection and autocorrelation-based
+            respiratory cycle detection.</li>
+
+        <li>Designed confidence metrics for respiratory rate estimation.</li>
+
+        <li>Validated the algorithm against BIOPAC respiratory belt
+            measurements.</li>
+
+    </ul>
+
+
+    <h2>Signal Processing Pipeline</h2>
+
+    <ol>
+
+        <li>Import raw accelerometer data.</li>
+
+        <li>Interpolation of non-uniform sampling.</li>
+
+        <li>Filtering and preprocessing.</li>
+
+        <li>Principal Component Analysis (PCA).</li>
+
+        <li>Respiratory signal extraction.</li>
+
+        <li>Autocorrelation analysis.</li>
+
+        <li>Peak detection.</li>
+
+        <li>Respiratory cycle detection.</li>
+
+        <li>Respiratory rate estimation.</li>
+
+        <li>Confidence estimation.</li>
+
+    </ol>
+
+
+    <h2>Methods</h2>
+
+    <div class="tags">
+
+        <span>MATLAB</span>
+
+        <span>Signal Processing</span>
+
+        <span>PCA</span>
+
+        <span>Autocorrelation</span>
+
+        <span>Digital Filtering</span>
+
+        <span>Peak Detection</span>
+
+        <span>Interpolation</span>
+
+        <span>Statistical Analysis</span>
+
+    </div>
+
+
+    <h2>Results</h2>
+
+    <p>
+
+        The developed algorithm successfully extracts respiratory information
+        from chest-mounted smartphone accelerometer measurements and estimates
+        respiratory rate by combining signal preprocessing, principal
+        component analysis and autocorrelation-based cycle detection.
+
+    </p>
+
+    <p>
+
+        Performance is evaluated by comparing the estimated respiratory rate
+        with reference measurements obtained using a BIOPAC respiratory belt.
+
+    </p>
+
+
+    <img
+        class="project-main-image"
+        src="../images/respiration-comparison.png"
+        alt="Comparison with reference respiratory belt"
+    >
+
+
+    <h2>Technologies</h2>
+
+    <div class="tags">
+
+        <span>MATLAB</span>
+
+        <span>PCA</span>
+
+        <span>BIOPAC</span>
+
+        <span>Accelerometer</span>
+
+        <span>Scientific Computing</span>
+
+        <span>Algorithm Development</span>
+
+    </div>
+
+
+    <h2>Future Work</h2>
+
+    <p>
+
+        Future work includes improving robustness during motion, evaluating
+        the algorithm on larger datasets, investigating machine learning
+        approaches for respiratory signal extraction and implementing the
+        method for real-time operation on mobile devices.
+
+    </p>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Ville Kallinen
+    </p>
+
+</footer>
+
+</body>
+
+</html>
