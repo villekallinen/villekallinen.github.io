@@ -2,346 +2,55 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Ville Kallisen portfolio – signaalinkäsittely, koneoppiminen ja sulautetut järjestelmät."
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ville Kallisen portfolio – signaalinkäsittely, simulaatio, koneoppiminen, sulautetut järjestelmät ja tieteellinen laskenta.">
     <title>Ville Kallinen | Portfolio</title>
-
     <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-
-    <header class="hero">
-        <nav class="navigation">
-            <a class="logo" href="#">Ville Kallinen</a>
-
-            <div class="nav-links">
-                <a href="#about">Minusta</a>
-                <a href="#skills">Osaaminen</a>
-                <a href="#projects">Projektit</a>
-                <a href="#contact">Yhteystiedot</a>
-            </div>
-
-            <div class="language-switch">
-                <a href="../index.html">🇬🇧 EN</a>
-            </div>
-            
-        </nav>
-
-        <div class="hero-content">
-            <p class="eyebrow">
-                Tekninen fysiikka · Signaalinkäsittely · Ohjelmistokehitys
-            </p>
-
-            <h1>
-                Rakennan käytännöllisiä ratkaisuja datan,
-                algoritmien ja fysiikan avulla.
-            </h1>
-
-            <p class="hero-description">
-                Olen teknisen fysiikan diplomi-insinööriopiskelija,
-                joka on kiinnostunut signaalinkäsittelystä,
-                koneoppimisesta ja sulautetuista järjestelmistä.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a class="button primary-button" href="#projects">
-                Tutustu projekteihin
-            </a>
-
-            <a
-                class="button secondary-button"
-                href="../Ville-Kallinen-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Avaa CV
-            </a>
-
-            <a
-                class="button secondary-button"
-                href="https://github.com/villekallinen"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-
-        </div>
-    </header>
-
-    <main>
-
-        <section id="about" class="section">
-            <div class="section-heading">
-                <p class="section-number">01</p>
-                <h2>Minusta</h2>
-            </div>
-
-            <div class="about-grid">
-                <div>
-                    <p>
-                        Olen Itä-Suomen yliopistossa teknistä fysiikkaa
-                        opiskeleva diplomi-insinööriopiskelija.
-                        Minua kiinnostavat erityisesti signaalinkäsittely,
-                        anturidata, koneoppiminen ja sulautetut järjestelmät.
-                    </p>
-
-                    <p>
-                        Projekteissani olen käsitellyt esimerkiksi
-                        kiihtyvyysanturien signaaleja, kehittänyt
-                        hengitystaajuuden arviointimenetelmiä,
-                        rakentanut koneoppimismalleja ja tehnyt
-                        akustista simulointia.
-                    </p>
-                </div>
-
-                <div class="info-card">
-                    <p><strong>Sijainti:</strong> Kuopio, Suomi</p>
-                    <p><strong>Koulutus:</strong> Tekninen fysiikka</p>
-                    <p><strong>Kiinnostuksen kohteet:</strong></p>
-                    <p>
-                        Signaalinkäsittely, koneoppiminen,
-                        ohjelmistokehitys ja sulautetut järjestelmät
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section alternative-section">
-            <div class="section-heading">
-                <p class="section-number">02</p>
-                <h2>Osaaminen</h2>
-            </div>
-
-            <div class="skills-grid">
-
-                <article class="skill-card">
-                    <h3>Ohjelmointi</h3>
-                    <ul>
-                        <li>MATLAB</li>
-                        <li>Python</li>
-                        <li>C ja C++</li>
-                        <li>Git</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h3>Signaalinkäsittely</h3>
-                    <ul>
-                        <li>Digitaaliset suodattimet</li>
-                        <li>PCA ja autokorrelaatio</li>
-                        <li>FFT ja spektrianalyysi</li>
-                        <li>Piikkien tunnistaminen</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h3>Koneoppiminen</h3>
-                    <ul>
-                        <li>Scikit-learn</li>
-                        <li>Random Forest</li>
-                        <li>TensorFlow</li>
-                        <li>Neuroverkot</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h3>Tekniset työkalut</h3>
-                    <ul>
-                        <li>COMSOL Multiphysics</li>
-                        <li>Linux ja WSL</li>
-                        <li>Arduino</li>
-                        <li>CUDA</li>
-                    </ul>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="section-heading">
-                <p class="section-number">03</p>
-                <h2>Projektit</h2>
-            </div>
-
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <p class="project-type">
-                            Diplomityö · Signaalinkäsittely
-                        </p>
-
-                        <h3>
-                            Hengitystaajuuden arviointi
-                            kiihtyvyysanturista
-                        </h3>
-
-                        <p>
-                            Kehitän MATLAB-pohjaista menetelmää, joka
-                            arvioi hengitystaajuuden rintakehälle
-                            asetetun älypuhelimen kolmiakselisesta
-                            kiihtyvyysdatasta.
-                        </p>
-
-                        <div class="tags">
-                            <span>MATLAB</span>
-                            <span>PCA</span>
-                            <span>ACF</span>
-                            <span>Signal processing</span>
-                        </div>
-
-                        <a
-                            href="projects/respiration.html"
-                            class="project-link"
-                        >
-                            Lue lisää →
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <p class="project-type">
-                            Koneoppiminen · Teollisuus
-                        </p>
-
-                        <h3>
-                            Vikojen tunnistaminen sähköisestä
-                            tomografiadatasta
-                        </h3>
-
-                        <p>
-                            Rakensin Random Forest -mallin, joka tunnistaa
-                            mittausjärjestelmän vikatilanteita sähköisestä
-                            tomografiadatasta.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>Random Forest</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            Lue lisää →
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <p class="project-type">
-                            Akustiikka · Simulointi
-                        </p>
-
-                        <h3>
-                            Matalien taajuuksien optimointi
-                            kuunteluhuoneessa
-                        </h3>
-
-                        <p>
-                            Optimoin kahden matalataajuuskaiuttimen
-                            sijainteja COMSOL-simulointien ja
-                            mittausten avulla.
-                        </p>
-
-                        <div class="tags">
-                            <span>COMSOL</span>
-                            <span>Akustiikka</span>
-                            <span>Optimointi</span>
-                            <span>MATLAB</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            Lue lisää →
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <p class="project-type">
-                            Sulautetut järjestelmät
-                        </p>
-
-                        <h3>
-                            IMU-anturi ja sensorifuusio
-                        </h3>
-
-                        <p>
-                            Sulautettu järjestelmä, joka lukee
-                            kiihtyvyys- ja gyroskooppianturia sekä
-                            arvioi laitteen asentoa reaaliajassa.
-                        </p>
-
-                        <div class="tags">
-                            <span>C++</span>
-                            <span>Arduino</span>
-                            <span>IMU</span>
-                            <span>I2C</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            Lue lisää →
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <div class="section-heading">
-                <p class="section-number">04</p>
-                <h2>Ota yhteyttä</h2>
-            </div>
-
-            <p>
-                Olen kiinnostunut signaalinkäsittelyyn, simulaatioon
-                ohjelmistokehitykseen, koneoppimiseen ja
-                sulautettuihin järjestelmiin liittyvistä tehtävistä.
-            </p>
-
-            <div class="contact-links">
-                <a href="mailto:ville_kallinen@hotmail.com">
-                    Sähköposti
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/ville-kallinen/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                <a
-                    href="https://github.com/villekallinen"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Ville Kallinen</p>
-    </footer>
-
+<a class="skip-link" href="#main-content">Siirry sisältöön</a>
+<div class="navigation-shell">
+    <nav class="navigation" aria-label="Päänavigaatio">
+        <a class="logo" href="#">Ville Kallinen</a>
+        <div class="nav-links"><a href="#about">Minusta</a><a href="#skills">Osaaminen</a><a href="#projects">Projektit</a><a href="#experience">Kokemus</a><a href="#contact">Yhteystiedot</a></div>
+        <div class="language-switch"><a href="../index.html" lang="en">🇬🇧 EN</a></div>
+    </nav>
+</div>
+<header class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">Tekninen fysiikka · Signaalinkäsittely · Ohjelmistokehitys</p>
+        <h1>Rakennan käytännöllisiä ratkaisuja datan, algoritmien ja fysiikan avulla.</h1>
+        <p class="hero-description">Olen Itä-Suomen yliopiston teknisen fysiikan diplomi-insinööriopiskelija. Keskityn signaalinkäsittelyyn, simulaatioon, koneoppimiseen, sulautettuihin järjestelmiin ja tieteelliseen ohjelmistokehitykseen.</p>
+        <div class="hero-buttons"><a class="button primary-button" href="#projects">Tutustu projekteihin</a><a class="button secondary-button" href="../Ville-Kallinen-CV.pdf" target="_blank" rel="noopener noreferrer">Avaa CV</a><a class="button secondary-button" href="https://github.com/villekallinen" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </div>
+</header>
+<main id="main-content">
+<section id="about" class="section">
+    <div class="section-heading"><p class="section-number">01</p><h2>Minusta</h2></div>
+    <div class="about-grid">
+        <div class="about-copy"><p>Opiskelen teknistä fysiikkaa Itä-Suomen yliopistossa. Työssäni yhdistyvät ohjelmointi, matemaattiset menetelmät, fysikaalinen mallinnus ja kokeellinen data.</p><p>Olen työskennellyt kiihtyvyysanturisignaalien, hengitystaajuuden arvioinnin, sähköisen tomografiadatan, huoneakustiikan simuloinnin, rinnakkaislaskennan ja sulautettujen anturijärjestelmien parissa.</p><p>Aiempi farmasian taustani tuo osaamiseeni käytännön kokemusta terveydenhuollosta, vastuullisuudesta ja moniammatillisesta yhteistyöstä.</p></div>
+        <aside class="info-card" aria-label="Profiilitiedot"><dl><dt>Sijainti</dt><dd>Kuopio, Suomi</dd><dt>Koulutus</dt><dd>Tekninen fysiikka</dd><dt>Yliopisto</dt><dd>Itä-Suomen yliopisto</dd><dt>Keskeiset kiinnostuksen kohteet</dt><dd>Signaalinkäsittely, simulaatio, koneoppiminen, sulautetut järjestelmät ja tieteellinen laskenta</dd></dl></aside>
+    </div>
+</section>
+<div class="section-alt"><section id="skills" class="section">
+    <div class="section-heading"><p class="section-number">02</p><h2>Osaaminen</h2><p class="section-lead">Tieteellisen ohjelmoinnin, data-analyysin ja käytännön insinöörityön yhdistelmä.</p></div>
+    <div class="skills-grid"><article class="skill-card"><h3>Ohjelmointi</h3><ul><li>MATLAB</li><li>Python</li><li>C ja C++</li><li>Java</li><li>Git</li></ul></article><article class="skill-card"><h3>Signaalinkäsittely</h3><ul><li>Digitaalinen suodatus</li><li>PCA ja autokorrelaatio</li><li>FFT ja spektrianalyysi</li><li>Huippujen tunnistus</li></ul></article><article class="skill-card"><h3>Koneoppiminen</h3><ul><li>Scikit-learn</li><li>Random Forest</li><li>TensorFlow</li><li>Neuroverkot</li></ul></article><article class="skill-card"><h3>Tekniset työkalut</h3><ul><li>COMSOL Multiphysics</li><li>Linux ja WSL</li><li>Arduino</li><li>CUDA</li></ul></article></div>
+</section></div>
+<section id="projects" class="section">
+    <div class="section-heading"><p class="section-number">03</p><h2>Valitut projektit</h2><p class="section-lead">Projektit esittelevät algoritmikehitystä, mallinnusta, data-analyysiä ja sulautettua ohjelmointia.</p></div>
+    <div class="projects-grid">
+        <article class="project-card"><div class="project-accent"></div><div class="project-content"><p class="project-type">Diplomityö · Signaalinkäsittely</p><h3>Hengitystaajuuden arviointi kiihtyvyysdatasta</h3><p>MATLAB-pohjainen menetelmä hengitystaajuuden arviointiin rintakehälle asetetun älypuhelimen kiihtyvyysdatasta ja tulosten validointiin BIOPAC-mittauksia vasten.</p><div class="tags"><span>MATLAB</span><span>PCA</span><span>Autokorrelaatio</span><span>Signaalinkäsittely</span></div><a href="projects/respiration.html" class="project-link">Lue lisää →</a></div></article>
+        <article class="project-card"><div class="project-accent"></div><div class="project-content"><p class="project-type">Koneoppiminen · Teollinen data</p><h3>Vikojen tunnistaminen sähköisestä tomografiadatasta</h3><p>Random Forest -luokittelumalli mittausjärjestelmän vikatilanteiden tunnistamiseen sähköisestä tomografiadatasta.</p><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Random Forest</span><span>Data-analyysi</span></div><a href="projects/fault-detection.html" class="project-link">Lue lisää →</a></div></article>
+        <article class="project-card"><div class="project-accent"></div><div class="project-content"><p class="project-type">Akustiikka · Simulaatio</p><h3>Matalien taajuuksien optimointi akustiikan tutkimustilassa</h3><p>Kahden matalataajuustoistimen sijaintien optimointi COMSOL-simulaatioilla, numeerisella optimoinnilla ja akustisilla mittauksilla.</p><div class="tags"><span>COMSOL</span><span>Akustiikka</span><span>Optimointi</span><span>MATLAB</span></div><a href="projects/room-acoustics.html" class="project-link">Lue lisää →</a></div></article>
+        <article class="project-card"><div class="project-accent"></div><div class="project-content"><p class="project-type">Sulautetut järjestelmät</p><h3>IMU-anturi ja reaaliaikainen asennon arviointi</h3><p>Sulautettu järjestelmä, joka lukee kiihtyvyys- ja gyroskooppidataa sekä arvioi laitteen asentoa sensorifuusion avulla.</p><div class="tags"><span>C++</span><span>Arduino</span><span>IMU</span><span>I2C</span></div><a href="projects/embedded.html" class="project-link">Lue lisää →</a></div></article>
+    </div>
+</section>
+<div class="section-alt"><section id="experience" class="section">
+    <div class="section-heading"><p class="section-number">04</p><h2>Kokemus</h2><p class="section-lead">Valittua teknistä ja ammatillista kokemusta.</p></div>
+    <div class="timeline"><article class="timeline-card"><p class="timeline-meta">2026– · Kubios Oy</p><h3>Algoritmikehittäjä, harjoittelija</h3><p>Hengitystaajuuden arviointialgoritmien kehittäminen.</p></article><article class="timeline-card"><p class="timeline-meta">2024–2025 · Rocsole Oy</p><h3>Teknillisen fysiikan projektityö</h3><p>Data-analyysi ja koneoppimismallin kehittäminen vikojen tunnistamiseen.</p></article><article class="timeline-card"><p class="timeline-meta">2020– · Karttulan apteekki</p><h3>Farmaseutti</h3><p>Reseptipalvelut, annosjakelu, asiakasohjaus ja kesäkuukausien esihenkilövastuu.</p></article><article class="timeline-card"><p class="timeline-meta">2019–2020 · Pohjois-Karjalan keskussairaala</p><h3>Osastofarmaseutti</h3><p>Lääkitysten tarkastus, lääkevaraston ylläpito, potilasohjaus ja moniammatillinen yhteistyö.</p></article></div>
+</section></div>
+<section id="contact" class="section contact-section"><div class="section-heading"><p class="section-number">05</p><h2>Ota yhteyttä</h2><p class="section-lead">Olen kiinnostunut signaalinkäsittelyn, simulaation, ohjelmistokehityksen, koneoppimisen, tieteellisen laskennan ja sulautettujen järjestelmien tehtävistä.</p></div><div class="contact-links"><a href="mailto:ville_kallinen@hotmail.com">Sähköposti</a><a href="https://www.linkedin.com/in/ville-kallinen/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/villekallinen" target="_blank" rel="noopener noreferrer">GitHub</a></div></section>
+</main>
+<footer><p>© 2026 Ville Kallinen</p></footer>
 </body>
 </html>
