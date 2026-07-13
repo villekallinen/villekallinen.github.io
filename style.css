@@ -373,4 +373,17 @@ footer {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+    
+    .language-switch a {
+        padding: 8px 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: white;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+
+    .language-switch a:hover {
+        background: var(--surface-alternative);
+    }
 }
