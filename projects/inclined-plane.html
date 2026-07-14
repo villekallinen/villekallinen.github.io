@@ -1,0 +1,214 @@
+<p class="project-type">
+    Data Analysis · Parameter Estimation
+</p>
+
+<h1 class="project-page-title">
+    Parameter Estimation on an Inclined Plane
+</h1>
+
+<p class="project-introduction">
+    This experimental data-analysis project investigated the
+    estimation of physical parameters from motion measurements
+    collected on an inclined plane.
+
+    The moments of inertia of two cylindrical objects and the
+    kinetic friction coefficient of a sliding rectangular object
+    were estimated using linear, nonlinear and weighted
+    least-squares methods.
+</p>
+
+<div class="project-summary">
+
+    <h2>Project Summary</h2>
+
+    <table>
+        <tr>
+            <td><strong>Project</strong></td>
+            <td>Data Analysis Course Project</td>
+        </tr>
+
+        <tr>
+            <td><strong>University</strong></td>
+            <td>University of Eastern Finland</td>
+        </tr>
+
+        <tr>
+            <td><strong>Status</strong></td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td><strong>Year</strong></td>
+            <td>2024</td>
+        </tr>
+
+        <tr>
+            <td><strong>Programming Language</strong></td>
+            <td>MATLAB</td>
+        </tr>
+
+        <tr>
+            <td><strong>Measured Quantities</strong></td>
+            <td>Travel time and inclination angle</td>
+        </tr>
+
+        <tr>
+            <td><strong>Estimated Parameters</strong></td>
+            <td>Moment of inertia and kinetic friction coefficient</td>
+        </tr>
+
+        <tr>
+            <td><strong>Main Topics</strong></td>
+            <td>
+                Parameter Estimation<br>
+                Least-Squares Methods<br>
+                Experimental Mechanics
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<img
+    class="project-main-image"
+    src="../images/inclined-plane/hero.png"
+    alt="Inclined-plane measurement setup"
+>
+
+<h2>Project Overview</h2>
+
+<p>
+    The objective of the project was to estimate mechanical
+    parameters that could not be measured directly. Cylindrical
+    objects were allowed to roll down an inclined plane, while a
+    rectangular object was allowed to slide along the same surface.
+</p>
+
+<p>
+    Two optical gates connected to an oscilloscope were used to
+    measure the travel time between known positions. Measurements
+    were repeated at several inclination angles to create datasets
+    suitable for parameter estimation.
+</p>
+
+<p>
+    Mathematical observation models were derived from Newton's
+    equations of translational and rotational motion. The unknown
+    parameters were then estimated by fitting these models to the
+    experimental measurements.
+</p>
+
+<h2>My Contribution</h2>
+
+<ul>
+    <li>Planned and performed the inclined-plane measurements.</li>
+
+    <li>Measured travel times using optical gates and an oscilloscope.</li>
+
+    <li>Derived observation models for rolling and sliding objects.</li>
+
+    <li>Implemented nonlinear least-squares estimation in MATLAB.</li>
+
+    <li>Implemented weighted nonlinear least-squares estimation.</li>
+
+    <li>Linearised the rolling-object observation model.</li>
+
+    <li>Implemented linear least-squares estimation for comparison.</li>
+
+    <li>Estimated parameter uncertainties and compared the estimation methods.</li>
+
+    <li>Compared experimental moment-of-inertia estimates with theoretical values.</li>
+</ul>
+
+<h2>Analysis Workflow</h2>
+
+<ol>
+    <li>Measure object dimensions, masses and the geometry of the experimental setup.</li>
+
+    <li>Set the inclined plane to a known angle.</li>
+
+    <li>Measure the travel time between two optical gates.</li>
+
+    <li>Repeat each measurement several times.</li>
+
+    <li>Calculate the mean measurement and measurement uncertainty.</li>
+
+    <li>Construct nonlinear observation models from the equations of motion.</li>
+
+    <li>Estimate the unknown parameters using nonlinear least squares.</li>
+
+    <li>Apply weighted least squares using measurement uncertainties.</li>
+
+    <li>Linearise the rolling-object model and perform linear estimation.</li>
+
+    <li>Compare experimental estimates with theoretical parameter values.</li>
+</ol>
+
+<h2>Methods</h2>
+
+<div class="tags">
+    <span>MATLAB</span>
+    <span>Nonlinear Least Squares</span>
+    <span>Weighted Least Squares</span>
+    <span>Linear Least Squares</span>
+    <span>Gauss–Newton Method</span>
+    <span>Parameter Estimation</span>
+    <span>Uncertainty Analysis</span>
+    <span>Experimental Mechanics</span>
+    <span>Physical Modelling</span>
+</div>
+
+<h2>Experimental Setup</h2>
+
+<p>
+    Two cylindrical objects and one rectangular object were measured
+    on an adjustable inclined plane. The cylinders were measured at
+    ten inclination angles between 3 and 30 degrees. The sliding
+    object required larger angles because static friction prevented
+    motion at the smallest inclinations.
+</p>
+
+<p>
+    Six repeated measurements were performed for each object and
+    inclination angle. The measured travel time was defined as the
+    time required for the front edge of the object to move from the
+    first optical gate to the second.
+</p>
+
+<h2>Results</h2>
+
+<p>
+    The moments of inertia of both cylindrical objects and the
+    kinetic friction coefficient of the sliding object were
+    successfully estimated from the experimental measurements.
+</p>
+
+<p>
+    Comparing ordinary, weighted and linearised estimation methods
+    demonstrated how observation-model selection and measurement
+    uncertainty influence the final parameter estimates.
+</p>
+
+<h2>Skills Demonstrated</h2>
+
+<div class="tags">
+    <span>MATLAB</span>
+    <span>Data Analysis</span>
+    <span>Parameter Estimation</span>
+    <span>Mathematical Modelling</span>
+    <span>Least-Squares Optimisation</span>
+    <span>Uncertainty Analysis</span>
+    <span>Experimental Design</span>
+    <span>Mechanics</span>
+    <span>Scientific Reporting</span>
+</div>
+
+<h2>Key Learning Outcomes</h2>
+
+<p>
+    The project strengthened my understanding of how physical models
+    can be combined with experimental data to estimate unknown
+    parameters. It also provided practical experience in nonlinear
+    optimisation, weighted estimation, model linearisation and
+    measurement-uncertainty analysis.
+</p>
