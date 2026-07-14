@@ -1,210 +1,250 @@
 <p class="project-type">
-
-Suurteholaskenta · Tieteellinen laskenta
-
+    Suurteholaskenta · Tieteellinen laskenta
 </p>
-
 
 <h1 class="project-page-title">
-
-Ilmastomallin jälkikäsittelyn
-GPU-rinnakkaistaminen
-
+    Ilmastomallin jälkikäsittelyn
+    GPU-rinnakkaistaminen
 </h1>
 
-
 <p class="project-introduction">
+    Projektissa tutkittiin, kuinka GPU-laskentaa voidaan hyödyntää
+    suurten ilmastomalliaineistojen jälkikäsittelyn
+    nopeuttamiseen. Työssä korvattiin laskennallisesti raskaita
+    CPU-operaatioita CUDA-yhteensopivilla GPU-laskennoilla
+    hyödyntäen CuPy-kirjastoa.
 
-Projektissa tutkittiin, kuinka GPU-laskentaa voidaan hyödyntää
-suurten ilmastomalliaineistojen jälkikäsittelyn
-nopeuttamiseen. Työssä korvattiin laskennallisesti raskaita
-CPU-operaatioita CUDA-yhteensopivilla GPU-laskennoilla
-hyödyntäen CuPy-kirjastoa.
-
-Toteutus kehitettiin ja testattiin CSC:n Mahti-
-supertietokoneella käyttäen todellista ilmastomallidataa.
-
+    Toteutus kehitettiin ja testattiin CSC:n Mahti-
+    supertietokoneella käyttäen todellista ilmastomallidataa.
 </p>
-
 
 <div class="project-summary">
 
-<h2>Projektin yhteenveto</h2>
+    <h2>Projektin yhteenveto</h2>
 
-<table>
+    <table>
+        <tr>
+            <td><strong>Projekti</strong></td>
+            <td>Tieteellisen laskennan projektityö</td>
+        </tr>
 
-<tr>
-<td><strong>Projekti</strong></td>
-<td>Tieteellisen laskennan projektityö</td>
-</tr>
+        <tr>
+            <td><strong>Yliopisto</strong></td>
+            <td>Itä-Suomen yliopisto</td>
+        </tr>
 
-<tr>
-<td><strong>Yliopisto</strong></td>
-<td>Itä-Suomen yliopisto</td>
-</tr>
+        <tr>
+            <td><strong>Ajankohta</strong></td>
+            <td>2026</td>
+        </tr>
 
-<tr>
-<td><strong>Ajankohta</strong></td>
-<td>2026</td>
-</tr>
+        <tr>
+            <td><strong>Ohjelmointikieli</strong></td>
+            <td>Python</td>
+        </tr>
 
-<tr>
-<td><strong>Ohjelmointikieli</strong></td>
-<td>Python</td>
-</tr>
+        <tr>
+            <td><strong>GPU-teknologia</strong></td>
+            <td>CUDA / CuPy</td>
+        </tr>
 
-<tr>
-<td><strong>GPU-teknologia</strong></td>
-<td>CUDA / CuPy</td>
-</tr>
+        <tr>
+            <td><strong>Suoritusympäristö</strong></td>
+            <td>CSC Mahti -supertietokone</td>
+        </tr>
 
-<tr>
-<td><strong>Suoritusympäristö</strong></td>
-<td>CSC Mahti -supertietokone</td>
-</tr>
+        <tr>
+            <td><strong>Sovelluskohde</strong></td>
+            <td>Ilmastomallin jälkikäsittely</td>
+        </tr>
 
-<tr>
-<td><strong>Sovelluskohde</strong></td>
-<td>Ilmastomallin jälkikäsittely</td>
-</tr>
-
-</table>
+        <tr>
+            <td><strong>Kokonaisnopeutus</strong></td>
+            <td>Noin 4,3-kertainen</td>
+        </tr>
+    </table>
 
 </div>
 
-
 <img
-class="project-main-image"
-src="../../images/gpu-climate/hero.png"
-alt="GPU-rinnakkaistaminen"
+    class="project-main-image"
+    src="../../images/gpu-climate/hero.png"
+    alt="GPU-rinnakkaistettu ilmastomallin jälkikäsittely"
 >
-
 
 <h2>Projektin tausta</h2>
 
 <p>
-
-Ilmastomallien simuloinnit tuottavat erittäin suuria
-aineistoja, joiden jälkikäsittely vaatii paljon
-laskentatehoa. Projektin tavoitteena oli hyödyntää
-GPU-rinnakkaislaskentaa numeeristen laskentojen
-nopeuttamiseksi säilyttäen tulosten oikeellisuus.
-
+    Ilmastomallien simuloinnit tuottavat erittäin suuria
+    moniulotteisia aineistoja, joiden jälkikäsittely voi sisältää
+    suuren määrän toistuvia numeerisia operaatioita. Perinteisesti
+    yhdellä CPU:lla suoritettuna nämä laskennat voivat muodostua
+    koko analyysiprosessin pullonkaulaksi.
 </p>
 
 <p>
-
-Työssä tutkittiin erityisesti CUDA-pohjaisen
-rinnakkaislaskennan soveltuvuutta ilmastodatan
-jälkikäsittelyyn.
-
+    Projektin tavoitteena oli hyödyntää GPU-rinnakkaislaskentaa
+    ilmastodatan numeerisen jälkikäsittelyn nopeuttamiseksi
+    säilyttäen tulosten oikeellisuus. Työssä tutkittiin erityisesti
+    CUDA-pohjaisen rinnakkaislaskennan ja CuPy-kirjaston
+    soveltuvuutta useiden ilmakehän suureiden laskentaan.
 </p>
-
 
 <h2>Oma roolini</h2>
 
 <ul>
+    <li>Muutin NumPy-pohjaisia laskentoja CuPy-yhteensopiviksi.</li>
 
-<li>Muutin NumPy-laskennan CuPy-pohjaiseksi.</li>
+    <li>Suunnittelin GPU-muistin käytön ja datan käsittelyn erissä.</li>
 
-<li>Suunnittelin GPU-muistinhallinnan.</li>
+    <li>Toteutin CPU:n ja GPU:n väliset datansiirrot.</li>
 
-<li>Toteutin CPU:n ja GPU:n välisen datansiirron.</li>
+    <li>Optimoin numeerisia operaatioita rinnakkaiseen suoritukseen.</li>
 
-<li>Optimoin numeeriset laskennat rinnakkaisiksi.</li>
+    <li>Vertailin CPU- ja GPU-toteutusten suoritusaikoja.</li>
 
-<li>Vertailin CPU- ja GPU-suorituskykyä.</li>
+    <li>Varmistin GPU-laskennan tulosten vastaavuuden CPU-toteutukseen nähden.</li>
 
-<li>Varmistin laskennan oikeellisuuden.</li>
-
+    <li>Analysoin datansiirron ja rinnakkaistamisen aiheuttamia suorituskykyrajoitteita.</li>
 </ul>
-
 
 <h2>GPU-laskentaputki</h2>
 
 <ol>
+    <li>Ilmastomallidatan lukeminen tallennusjärjestelmästä.</li>
 
-<li>Ilmastodatan lukeminen.</li>
+    <li>Tarvittavien muuttujien ja aika-askeleiden valitseminen.</li>
 
-<li>Datan siirto GPU-muistiin.</li>
+    <li>Datan siirtäminen CPU-muistista GPU-muistiin.</li>
 
-<li>Rinnakkaislaskenta CuPy-kirjastolla.</li>
+    <li>Rinnakkaisten numeeristen laskentojen suorittaminen CuPy-kirjastolla.</li>
 
-<li>Tulosten siirto takaisin CPU:lle.</li>
+    <li>Tulosten siirtäminen takaisin CPU-muistiin.</li>
 
-<li>GPU-muistin vapauttaminen.</li>
+    <li>GPU-muistin vapauttaminen seuraavaa käsittelyerää varten.</li>
 
-<li>Prosessin toistaminen koko aineistolle.</li>
-
+    <li>Prosessin toistaminen koko ilmastoaineistolle.</li>
 </ol>
-
 
 <h2>Käytetyt menetelmät</h2>
 
 <div class="tags">
-
-<span>Python</span>
-
-<span>CUDA</span>
-
-<span>CuPy</span>
-
-<span>NumPy</span>
-
-<span>xarray</span>
-
-<span>GPU-laskenta</span>
-
-<span>Rinnakkaisohjelmointi</span>
-
-<span>Tieteellinen laskenta</span>
-
+    <span>Python</span>
+    <span>CUDA</span>
+    <span>CuPy</span>
+    <span>NumPy</span>
+    <span>xarray</span>
+    <span>GPU-laskenta</span>
+    <span>Rinnakkaisohjelmointi</span>
+    <span>Tieteellinen laskenta</span>
+    <span>Suorituskyvyn profilointi</span>
+    <span>Suurten aineistojen käsittely</span>
 </div>
 
-
-<h2>Tulokset</h2>
+<h2>Suorituskykytulokset</h2>
 
 <p>
-
-GPU-rinnakkaistaminen nopeutti jälkikäsittelyä merkittävästi.
-Suurin suorituskykyhyöty saavutettiin tilanteissa, joissa
-useita ilmakehän suureita käsiteltiin samanaikaisesti.
-Yksittäisten laskentojen suorituskykyä rajoitti pääasiassa
-CPU:n ja GPU:n välinen muistinsiirto.
-
+    GPU-rinnakkaistettu toteutus lyhensi koko jälkikäsittelyprosessin
+    suoritusajan noin 460,88 sekunnista 107,25 sekuntiin. Tämä vastaa
+    noin 4,3-kertaista kokonaisnopeutusta sarjalliseen CPU-toteutukseen
+    verrattuna.
 </p>
 
+<figure class="project-figure project-figure-half">
+    <img
+        src="../../images/gpu-climate/climate-computation-speed.png"
+        alt="Sarjallisen CPU-laskennan ja rinnakkaisen GPU-laskennan suoritusaikojen vertailu"
+    >
+
+    <figcaption>
+        Sarjallisen CPU-toteutuksen ja rinnakkaisen GPU-toteutuksen
+        suoritusaikojen vertailu. Koko laskentaprosessin suoritusaika
+        lyheni noin 461 sekunnista 107 sekuntiin.
+    </figcaption>
+</figure>
+
+<p>
+    Suurin suorituskykyhyöty saavutettiin hiukkaspitoisuuksien
+    laskennassa. PM1-, PM2.5- ja PM10-laskennat nopeutuivat selvästi,
+    koska niissä voitiin hyödyntää tehokkaasti GPU:n suurta määrää
+    rinnakkaisia laskentaytimiä.
+</p>
+
+<p>
+    Kaikki laskentavaiheet eivät kuitenkaan hyötyneet
+    rinnakkaistamisesta samalla tavalla. CCN-laskennan suoritusaika
+    kasvoi noin 67,09 sekunnista 80,13 sekuntiin. Tämä osoittaa, että
+    GPU-laskenta ei automaattisesti nopeuta kaikkia algoritmeja.
+    Pienemmissä tai vähemmän rinnakkaistuvissa laskennoissa datansiirto,
+    muistinhallinta ja GPU-käynnistysten yleiskustannus voivat olla
+    suurempia kuin saavutettu laskentahyöty.
+</p>
+
+<h2>Tulosten tulkinta</h2>
+
+<p>
+    Tulokset osoittivat, että GPU-laskenta soveltui erityisen hyvin
+    suuriin taulukkomuotoisiin laskentoihin, joissa samat operaatiot
+    suoritettiin rinnakkain suurelle määrälle ilmakehän hilapisteitä,
+    korkeustasoja ja aika-askeleita.
+</p>
+
+<p>
+    Kokonaisprosessin kannalta GPU-toteutus oli selvästi nopeampi,
+    vaikka yksittäinen CCN-laskenta ei hyötynyt rinnakkaistamisesta.
+    Tämä korostaa suorituskykymittausten merkitystä: rinnakkaistamisen
+    hyöty tulee arvioida koko työnkulun eikä vain yksittäisen
+    laskentaytimen perusteella.
+</p>
 
 <h2>Projektissa kehitetty osaaminen</h2>
 
 <div class="tags">
-
-<span>GPU-ohjelmointi</span>
-
-<span>CUDA</span>
-
-<span>Python</span>
-
-<span>Suurteholaskenta</span>
-
-<span>Rinnakkaisohjelmointi</span>
-
-<span>Suorituskyvyn optimointi</span>
-
-<span>Tieteellinen laskenta</span>
-
-<span>Suurten aineistojen käsittely</span>
-
+    <span>GPU-ohjelmointi</span>
+    <span>CUDA</span>
+    <span>CuPy</span>
+    <span>Python</span>
+    <span>Suurteholaskenta</span>
+    <span>Rinnakkaisohjelmointi</span>
+    <span>Suorituskyvyn optimointi</span>
+    <span>Muistinhallinta</span>
+    <span>Tieteellinen laskenta</span>
+    <span>Suurten aineistojen käsittely</span>
+    <span>Suorituskykymittaus</span>
+    <span>Tulosten validointi</span>
 </div>
 
+<h2>Keskeiset opit</h2>
+
+<p>
+    Projekti tarjosi käytännön kokemusta tieteellisen Python-koodin
+    siirtämisestä CPU-laskennasta GPU-ympäristöön. Työssä korostuivat
+    laskennan rinnakkaistettavuuden arviointi, GPU-muistin hallinta,
+    datansiirtojen minimointi ja eri toteutusten suorituskyvyn
+    mittaaminen.
+</p>
+
+<p>
+    Tulokset osoittivat myös, että tehokas GPU-ratkaisu vaatii
+    muutakin kuin NumPy-operaatioiden suoran korvaamisen CuPy-
+    operaatioilla. Koko laskentaputken rakenne, käsiteltävien
+    aineistojen koko ja CPU:n sekä GPU:n väliset siirrot vaikuttavat
+    merkittävästi saavutettavaan nopeutukseen.
+</p>
 
 <h2>Jatkokehitys</h2>
 
 <p>
+    Jatkossa suorituskykyä voitaisiin parantaa vähentämällä CPU:n ja
+    GPU:n välisiä datansiirtoja, säilyttämällä välituloksia pidempään
+    GPU-muistissa sekä käsittelemällä useampia laskentavaiheita yhtenä
+    kokonaisuutena.
+</p>
 
-Jatkossa suorituskykyä voidaan parantaa hyödyntämällä useita
-GPU-laitteita, kehittämällä muistinhallintaa sekä
-laajentamalla toteutusta entistä suuremmille
-ilmastoaineistoille.
-
+<p>
+    Toteutusta voitaisiin lisäksi laajentaa usean GPU:n laskentaan,
+    hajautettuun käsittelyyn sekä entistä suurempiin
+    ilmastomalliaineistoihin. Erityisesti CCN-laskennan rakennetta
+    voitaisiin analysoida tarkemmin sen selvittämiseksi, voidaanko
+    algoritmia muuttaa GPU:lle paremmin soveltuvaksi.
 </p>
