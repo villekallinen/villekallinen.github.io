@@ -269,3 +269,20 @@ footer { padding: 28px 24px; border-top: 1px solid var(--border); color: var(--m
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none !important; }
 }
+
+project-figure-half {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.project-figure-half img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .project-figure-half {
+        width: 100%;
+    }
+}
