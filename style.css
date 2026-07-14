@@ -270,7 +270,7 @@ footer { padding: 28px 24px; border-top: 1px solid var(--border); color: var(--m
     *, *::before, *::after { transition: none !important; }
 }
 
-project-figure-half {
+.project-figure-half {
     width: 50%;
     margin: 2rem auto;
 }
@@ -285,4 +285,22 @@ project-figure-half {
     .project-figure-half {
         width: 100%;
     }
+}
+.project-figure {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.project-figure img {
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.project-figure figcaption {
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
 }
