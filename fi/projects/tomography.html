@@ -1,0 +1,236 @@
+<p class="project-type">
+    Käänteisongelmat · Laskennallinen kuvantaminen
+</p>
+
+<h1 class="project-page-title">
+    Tomografiakuvan rekonstruointi
+    gammasäteilymittauksista
+</h1>
+
+<p class="project-introduction">
+    Tässä laskennallisen kuvantamisen projektissa tutustuttiin
+    tomografian perusperiaatteisiin rekonstruoimalla kuva
+    gammasäteilyn vaimenemismittauksista.
+
+    Tuntematon kohde esitettiin 8 × 8 pikselin ruudukkona.
+    Jokaisen pikselin vaimennuskerroin estimoitiin useita
+    projektioreittejä pitkin tehdyistä mittauksista pienimmän
+    neliösumman estimoinnin ja regularisointimenetelmien avulla.
+</p>
+
+<div class="project-summary">
+
+    <h2>Projektin yhteenveto</h2>
+
+    <table>
+        <tr>
+            <td><strong>Projekti</strong></td>
+            <td>Data-analyysin kurssiprojekti</td>
+        </tr>
+
+        <tr>
+            <td><strong>Yliopisto</strong></td>
+            <td>Itä-Suomen yliopisto</td>
+        </tr>
+
+        <tr>
+            <td><strong>Tila</strong></td>
+            <td>Valmis</td>
+        </tr>
+
+        <tr>
+            <td><strong>Kesto</strong></td>
+            <td>2023–2024</td>
+        </tr>
+
+        <tr>
+            <td><strong>Ohjelmointikieli</strong></td>
+            <td>MATLAB</td>
+        </tr>
+
+        <tr>
+            <td><strong>Säteilylähde</strong></td>
+            <td>Amerikium-241-gammasäteilylähde</td>
+        </tr>
+
+        <tr>
+            <td><strong>Kuvan resoluutio</strong></td>
+            <td>8 × 8 pikseliä</td>
+        </tr>
+
+        <tr>
+            <td><strong>Pääaiheet</strong></td>
+            <td>
+                Käänteisongelmat<br>
+                Tomografinen rekonstruktio<br>
+                Regularisointi
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<img
+    class="project-main-image"
+    src="../../images/tomography/hero.png"
+    alt="Gammasäteilymittauksista rekonstruoitu tomografiakuva"
+>
+
+<h2>Projektin yleiskuvaus</h2>
+
+<p>
+    Tomografisessa kuvantamisessa kohteen sisäinen rakenne
+    rekonstruoidaan useista eri projektiosuunnista kerätyistä
+    mittauksista. Projektissa gammasäteilyä johdettiin mitattavan
+    kohteen läpi, minkä jälkeen kohteen läpäissyt säteily mitattiin
+    detektorilla.
+</p>
+
+<p>
+    Kohde jaettiin 64 pikseliin. Jokainen mittaus mallinnettiin
+    säteen pikseleissä kulkemien matkojen ja pikseleiden
+    tuntemattomien vaimennuskertoimien yhdistelmänä.
+</p>
+
+<p>
+    Muodostunut käänteisongelma ratkaistiin PNS-estimoinnilla.
+    Puutteellisesta projektiodatasta muodostuneet havaintomatriisit
+    olivat huonokuntoisia, joten ratkaisun vakautta ja kuvan laatua
+    parannettiin regularisointimenetelmillä.
+</p>
+
+<h2>Oma työpanos</h2>
+
+<ul>
+    <li>Gammasäteilyn vaimenemismittausten suorittaminen useista projektiosuunnista.</li>
+
+    <li>Kunkin mittaussäteen 8 × 8 pikseliruudukossa kulkeman matkan laskeminen.</li>
+
+    <li>Havaintomatriisien muodostaminen eri mittauskokoonpanoille.</li>
+
+    <li>PNS-pohjaisen kuvarekonstruktion toteuttaminen MATLABilla.</li>
+
+    <li>Matriisien kuntoisuuslukujen laskeminen ja vertaileminen.</li>
+
+    <li>Tavallisen Tikhonovin regularisaation toteuttaminen.</li>
+
+    <li>Ensimmäisen kertaluvun differenssimatriisiin perustuvan regularisaation toteuttaminen.</li>
+
+    <li>Eri kokoisista mittausaineistoista muodostettujen rekonstruktioiden vertaileminen.</li>
+
+    <li>Muovikuoren lisääminen osaksi havaintomallia.</li>
+
+    <li>Muovimateriaalin vaimennuskertoimen estimointi.</li>
+</ul>
+
+<h2>Rekonstruktion vaiheet</h2>
+
+<ol>
+    <li>Jaetaan kuvannettava kohde 8 × 8 pikselin ruudukoksi.</li>
+
+    <li>Mitataan gammasäteilyn vaimeneminen useita projektioreittejä pitkin.</li>
+
+    <li>Lasketaan kunkin säteen jokaisessa pikselissä kulkema matka.</li>
+
+    <li>Muodostetaan havaintomatriisi laskettujen kulkumatkojen perusteella.</li>
+
+    <li>Muodostetaan havaintovektori mitatuista vaimenemisarvoista.</li>
+
+    <li>Estimoidaan pikseleiden vaimennuskertoimet PNS-menetelmällä.</li>
+
+    <li>Arvioidaan havaintomatriisin kuntoisuus.</li>
+
+    <li>Vakautetaan rekonstruktio Tikhonovin regularisaatiolla.</li>
+
+    <li>Sovelletaan ensimmäisen kertaluvun differenssiregularisaatiota.</li>
+
+    <li>Muotoillaan estimoidut vaimennuskertoimet kaksiulotteiseksi kuvaksi.</li>
+</ol>
+
+<h2>Menetelmät</h2>
+
+<div class="tags">
+    <span>MATLAB</span>
+    <span>Tomografia</span>
+    <span>Käänteisongelmat</span>
+    <span>PNS-estimointi</span>
+    <span>Tikhonovin regularisaatio</span>
+    <span>Differenssiregularisaatio</span>
+    <span>Matriisin kuntoisuus</span>
+    <span>Gammasäteilyn vaimeneminen</span>
+    <span>Laskennallinen kuvantaminen</span>
+    <span>Kuvarekonstruktio</span>
+</div>
+
+<h2>Käänteisongelma</h2>
+
+<p>
+    Vaimenemismittaukset esitettiin lineaarisella havaintomallilla,
+    jonka tuntematon vektori sisälsi jokaisen pikselin
+    vaimennuskertoimen. Havaintomatriisi kuvasi kunkin gammasäteen
+    jokaisessa pikselissä kulkeman matkan.
+</p>
+
+<p>
+    Rajallisella projektiodatalla havaintomatriisista tuli
+    huonokuntoinen. Tällöin suora PNS-ratkaisu oli herkkä
+    mittauskohinalle ja tuotti epävakaita tai epäselviä
+    rekonstruktioita.
+</p>
+
+<h2>Regularisointi</h2>
+
+<p>
+    Tikhonovin regularisaatiolla rajoitettiin ratkaisua ja
+    vähennettiin mittausvirheiden vahvistumista. Lisäksi
+    ensimmäisen kertaluvun differenssimatriisilla rangaistiin
+    vierekkäisten parametrien suuria eroavaisuuksia.
+</p>
+
+<p>
+    Regularisoituja rekonstruktioita verrattiin tavalliseen
+    PNS-ratkaisuun sekä erikuntoisilla havaintomatriiseilla
+    muodostettuihin rekonstruktioihin.
+</p>
+
+<h2>Tulokset</h2>
+
+<p>
+    Mitattavan kohteen sisäinen rakenne pystyttiin rekonstruoimaan
+    gammasäteilyn vaimenemismittauksista. Rajalliseen tai
+    epätasaisesti jakautuneeseen mittausdataan perustuvissa kuvissa
+    havaintomatriisin huono kuntoisuus heikensi rekonstruktion laatua.
+</p>
+
+<p>
+    Regularisointi paransi rekonstruoitujen kuvien vakautta ja
+    tulkittavuutta. Projekti osoitti myös, että ympäröivän
+    muovikuoren mallintaminen vaikutti estimoituun
+    vaimennusjakaumaan ja mahdollisti muovin vaimennuskertoimen
+    estimoinnin.
+</p>
+
+<h2>Projektissa osoitetut taidot</h2>
+
+<div class="tags">
+    <span>MATLAB</span>
+    <span>Käänteisongelmat</span>
+    <span>Laskennallinen kuvantaminen</span>
+    <span>Lineaarialgebra</span>
+    <span>Regularisointi</span>
+    <span>Matriisianalyysi</span>
+    <span>PNS-estimointi</span>
+    <span>Fysikaalinen mallintaminen</span>
+    <span>Kokeellinen data-analyysi</span>
+    <span>Tieteellinen raportointi</span>
+</div>
+
+<h2>Keskeiset opit</h2>
+
+<p>
+    Projekti tarjosi käytännön kokemusta kuvantamiseen liittyvän
+    käänteisongelman muodostamisesta ja ratkaisemisesta. Työ osoitti,
+    kuinka mittausgeometria, matriisin kuntoisuus ja regularisointi
+    vaikuttavat rekonstruoidun kuvan vakauteen ja spatiaaliseen
+    laatuun.
+</p>
