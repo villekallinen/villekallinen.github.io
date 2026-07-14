@@ -162,17 +162,29 @@ intensive tasks.
 </div>
 
 
-<h2>Project Outcome</h2>
+<h2>Performance Results</h2>
 
 <p>
-
-GPU acceleration substantially reduced the execution time of
-the post-processing workflow. Performance improvements were
-most significant when several atmospheric variables were
-processed simultaneously, while individual computations were
-limited by memory transfer overhead.
-
+    The GPU-accelerated implementation reduced the total processing
+    time significantly compared with the serial CPU implementation.
+    The largest improvement was achieved when the full post-processing
+    workflow was executed on the GPU.
 </p>
+
+<figure class="project-figure project-figure-half">
+    <img
+        src="../images/gpu-climate/climate-coputation-speed.png"
+        alt="Comparison of serial CPU and parallel GPU processing times"
+    >
+
+    <figcaption>
+        Processing-time comparison between the serial CPU implementation
+        and the parallel GPU implementation. The complete workflow was
+        reduced from approximately 461 seconds to 107 seconds.
+    </figcaption>
+</figure>
+
+
 
 
 <h2>Skills Demonstrated</h2>
