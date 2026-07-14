@@ -72,7 +72,7 @@
 
 <img
     class="project-main-image"
-    src="../images/tomography/hero.png"
+    src="../images/tomography/reconstruction.png"
     alt="Tomographic image reconstructed from gamma-ray measurements"
 >
 
@@ -146,6 +146,34 @@
 
     <li>Reshape the estimated attenuation coefficients into a two-dimensional image.</li>
 </ol>
+
+<h2>Measurement Geometry</h2>
+
+<p>
+    The attenuation measurements were collected from several
+    projection angles around the imaging target. Each gamma ray
+    travelled through multiple pixels, and the distance travelled
+    inside each pixel determined its contribution to the observation
+    matrix used for image reconstruction.
+</p>
+
+<p>
+    Eight different projection directions were used to improve the
+    conditioning of the inverse problem and increase reconstruction
+    accuracy.
+</p>
+
+<figure class="project-figure">
+    <img
+        src="../images/tomography/Measurements.png"
+        alt="Measurement geometry and projection angles used for tomographic reconstruction"
+    >
+
+    <figcaption>
+        Measurement geometry showing the eight projection directions
+        used to construct the tomographic observation matrix.
+    </figcaption>
+</figure>
 
 <h2>Methods</h2>
 
