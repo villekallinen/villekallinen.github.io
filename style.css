@@ -277,7 +277,7 @@ footer { padding: 28px 24px; border-top: 1px solid var(--border); color: var(--m
 
 .project-figure-half img {
     display: block;
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
