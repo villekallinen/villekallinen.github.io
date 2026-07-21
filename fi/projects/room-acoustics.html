@@ -1,227 +1,301 @@
-<p class="project-type">
-    Laskennallinen akustiikka · Yliopistoprojekti
-</p>
+<!DOCTYPE html>
+<html lang="fi">
 
-<h1 class="project-page-title">
-    Matalien taajuuksien kaiutinsijoittelun
-    optimointi kuunteluhuoneessa
-</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p class="project-introduction">
-    Projektissa tutkittiin, kuinka matalien taajuuksien
-    kaiuttimien sijoittelu vaikuttaa kuunteluhuoneen
-    akustiseen vasteeseen. Työssä yhdistettiin
-    elementtimenetelmään perustuva COMSOL-simulointi,
-    numeerinen optimointi ja akustiset mittaukset
-    tavoitteena löytää kaiuttimille sijoitus, joka tuottaa
-    mahdollisimman tasaisen matalien taajuuksien vasteen
-    kuuntelupaikalla.
-
-    Projekti toteutettiin yhteistyössä Genelec Oy:n kanssa
-    osana yliopiston akustiikkaprojektia.
-</p>
-
-<div class="project-summary">
-
-    <h2>Projektin yhteenveto</h2>
-
-    <table>
-        <tr>
-            <td><strong>Projekti</strong></td>
-            <td>Yliopistoprojekti</td>
-        </tr>
-
-        <tr>
-            <td><strong>Yhteistyö</strong></td>
-            <td>Genelec Oy</td>
-        </tr>
-
-        <tr>
-            <td><strong>Yliopisto</strong></td>
-            <td>Itä-Suomen yliopisto</td>
-        </tr>
-
-        <tr>
-            <td><strong>Ajankohta</strong></td>
-            <td>2025–2026</td>
-        </tr>
-
-        <tr>
-            <td><strong>Ohjelmistot</strong></td>
-            <td>COMSOL Multiphysics, MATLAB</td>
-        </tr>
-
-        <tr>
-            <td><strong>Pääteemat</strong></td>
-            <td>
-                Huoneakustiikka<br>
-                Elementtimenetelmä (FEM)<br>
-                Numeerinen optimointi
-            </td>
-        </tr>
-    </table>
-
-</div>
-
-<img
-    class="project-main-image"
-    src="../../images/room-acoustics/Boundary.png"
-    alt="Kuunteluhuoneen elementtimenetelmämalli COMSOLissa"
->
-
-<h2>Projektin tausta</h2>
-
-<p>
-    Matalien taajuuksien käyttäytymiseen vaikuttavat voimakkaasti
-    huoneen geometria, pintamateriaalit ja huonemoodit. Epäsuotuisa
-    kaiutinsijoittelu voi aiheuttaa kuuntelupaikalle suuria
-    äänenpainetason vaihteluita, jolloin bassotoisto muuttuu
-    epätasaiseksi.
-</p>
-
-<p>
-    Projektin tavoitteena oli määrittää numeerisen simuloinnin ja
-    optimoinnin avulla kaiuttimille sijainnit, jotka pienentävät
-    näitä vaihteluita ja tuottavat tasaisemman vasteen
-    kuuntelupaikan ympäristössä.
-</p>
-
-<h2>Oma roolini</h2>
-
-<ul>
-    <li>Rakensin kuunteluhuoneen akustisen FEM-mallin COMSOLissa.</li>
-
-    <li>Määritin pintamateriaalien akustiset impedanssirajaehdot.</li>
-
-    <li>Toteutin taajuustason akustiset simuloinnit.</li>
-
-    <li>Toteutin kaiutinsijoittelun numeerisen optimoinnin.</li>
-
-    <li>Vertasin simuloituja taajuusvasteita akustisiin mittauksiin.</li>
-
-    <li>Analysoin huonemoodeja ja kuuntelupaikan taajuusvasteita.</li>
-</ul>
-
-<h2>Simulointiprosessi</h2>
-
-<ol>
-    <li>Kuunteluhuoneen geometrian mallintaminen.</li>
-
-    <li>Materiaalien akustisten ominaisuuksien määrittäminen.</li>
-
-    <li>Elementtiverkon muodostaminen.</li>
-
-    <li>Akustisen painekentän simulointi.</li>
-
-    <li>Kuuntelupaikan vasemman ja oikean korvan vasteiden arviointi.</li>
-
-    <li>Kaiuttimien sijaintien optimointi.</li>
-
-    <li>Tulosten validointi akustisilla mittauksilla.</li>
-</ol>
-
-<h2>Akustinen simulointi</h2>
-
-<p>
-    Elementtimenetelmämallilla laskettiin äänenpainetason
-    spatiaalinen jakautuminen koko kuunteluhuoneessa. Simulaatioiden
-    avulla tarkasteltiin, kuinka huoneen geometria, pintojen
-    rajaehdot ja kaiuttimien sijainnit vaikuttavat matalien
-    taajuuksien äänikenttään.
-</p>
-
-<p>
-    Simulaatiot osoittivat huoneeseen muodostuvat alueet, joissa
-    äänenpaine vahvistuu tai vaimenee huonemoodien ja
-    interferenssi-ilmiöiden seurauksena.
-</p>
-
-<figure class="project-figure">
-    <img
-        src="../../images/room-acoustics/OriginallocationsSPL.png"
-        alt="Simuloitu äänenpainetason jakautuminen kuunteluhuoneessa"
+    <meta
+        name="description"
+        content="Laskennallisen akustiikan projekti, jossa optimoitiin matalien taajuuksien kaiutinsijoittelua COMSOL-simuloinnin, numeerisen optimoinnin ja akustisten mittausten avulla."
     >
 
-    <figcaption>
-        Simuloitu äänenpainetason jakautuminen kuunteluhuoneessa
-        kaiuttimien alkuperäisillä sijainneilla.
-    </figcaption>
-</figure>
+    <title>Matalien taajuuksien kaiutinsijoittelun optimointi | Ville Kallinen</title>
 
-<h2>Käytetyt teknologiat</h2>
+    <link rel="stylesheet" href="../../style.css">
+</head>
 
-<div class="tags">
-    <span>COMSOL</span>
-    <span>MATLAB</span>
-    <span>Huoneakustiikka</span>
-    <span>Elementtimenetelmä</span>
-    <span>Numeerinen optimointi</span>
-    <span>Taajuustason simulointi</span>
-</div>
+<body>
 
-<h2>Simulointitulokset</h2>
+    <header class="project-hero">
+        <div class="project-hero-inner">
 
-<p>
-    Taajuusvasteet arvioitiin erikseen kuuntelijan vasemmalle ja
-    oikealle korvalle. Lisäksi kuuntelijan sijaintia siirrettiin
-    nimellisen kuuntelupaikan ympärillä, jotta voitiin arvioida
-    ratkaisun toimivuutta useissa lähekkäisissä kuuntelupisteissä.
-</p>
+            <a class="project-back" href="../index.html#projects">
+                ← Takaisin projekteihin
+            </a>
 
-<p>
-    Kaiuttimien alkuperäisten ja optimoitujen sijaintien
-    taajuusvasteita verrattiin koko tutkitulla taajuusalueella.
-</p>
+            <p class="project-type">
+                Laskennallinen akustiikka · Yliopistoprojekti
+            </p>
 
-<figure class="project-figure project-figure-half">
-    <img
-        src="../../images/room-acoustics/MovinListenerSimulations.png"
-        alt="Alkuperäisten ja optimoitujen kaiutinsijaintien simuloitujen äänenpainetasojen vertailu"
-    >
+            <h1 class="project-page-title">
+                Matalien taajuuksien kaiutinsijoittelun optimointi
+                kuunteluhuoneessa
+            </h1>
 
-    <figcaption>
-        Vasemman ja oikean korvan simuloidut äänenpainetasot
-        kuuntelijan eri sijainneissa. Optimoidut kaiutinsijainnit
-        pienentävät matalien taajuuksien voimakkaita vaihteluita
-        alkuperäiseen sijoitteluun verrattuna.
-    </figcaption>
-</figure>
+            <div class="project-introduction">
+                <p>
+                    Projektissa tutkittiin, kuinka matalien taajuuksien
+                    kaiuttimien sijoittelu vaikuttaa kuunteluhuoneen
+                    akustiseen vasteeseen. Työssä yhdistettiin
+                    elementtimenetelmään perustuva COMSOL-simulointi,
+                    numeerinen optimointi ja akustiset mittaukset tavoitteena
+                    löytää kaiuttimille sijainnit, jotka tuottavat
+                    mahdollisimman tasaisen matalien taajuuksien vasteen
+                    kuuntelupaikan ympäristössä.
+                </p>
 
-<h2>Tulokset</h2>
+                <p>
+                    Projekti toteutettiin yhteistyössä Genelec Oy:n kanssa
+                    osana yliopiston akustiikkaprojektia.
+                </p>
+            </div>
 
-<p>
-    Optimoinnin avulla löydettiin kaiuttimille sijainnit, jotka
-    tuottivat tasaisemman matalien taajuuksien vasteen
-    kuuntelupaikan ympäristössä. Erityisesti optimointi pienensi
-    huonemoodien aiheuttamia voimakkaita vastevaihteluita ja paransi
-    lähellä toisiaan sijaitsevien kuuntelupisteiden välistä
-    yhdenmukaisuutta.
-</p>
+        </div>
+    </header>
 
-<p>
-    Simulointituloksia verrattiin kuunteluhuoneessa tehtyihin
-    akustisiin mittauksiin. Mittausten avulla arvioitiin mallin
-    kykyä ennustaa todellisen huoneen matalien taajuuksien
-    käyttäytymistä.
-</p>
+    <main class="project-page">
 
-<h2>Projektissa kehitetty osaaminen</h2>
+        <section class="project-summary">
 
-<div class="tags">
-    <span>COMSOL</span>
-    <span>Elementtimenetelmä</span>
-    <span>Numeerinen optimointi</span>
-    <span>Huoneakustiikka</span>
-    <span>MATLAB</span>
-    <span>Tieteellinen laskenta</span>
-    <span>Kokeellinen validointi</span>
-</div>
+            <h2>Projektin yhteenveto</h2>
 
-<h2>Jatkokehitys</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Projekti</th>
+                        <td>Yliopistoprojekti</td>
+                    </tr>
 
-<p>
-    Jatkossa optimointia voitaisiin laajentaa useiden
-    kuuntelupaikkojen samanaikaiseen huomioimiseen, erilaisten
-    akustisten käsittelyratkaisujen tutkimiseen sekä nykyistä
-    laajemmalle taajuusalueelle.
-</p>
+                    <tr>
+                        <th scope="row">Yhteistyö</th>
+                        <td>Genelec Oy</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Yliopisto</th>
+                        <td>Itä-Suomen yliopisto</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Ajankohta</th>
+                        <td>2025–2026</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Ohjelmistot</th>
+                        <td>COMSOL Multiphysics ja MATLAB</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Pääteemat</th>
+                        <td>
+                            Huoneakustiikka<br>
+                            Elementtimenetelmä (FEM)<br>
+                            Numeerinen optimointi
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <figure class="project-figure">
+            <img
+                src="../../images/room-acoustics/Boundary.png"
+                alt="Kuunteluhuoneen elementtimenetelmämalli COMSOLissa"
+            >
+
+            <figcaption>
+                COMSOLissa toteutettu kuunteluhuoneen
+                elementtimenetelmämalli ja mallissa käytetyt akustiset
+                reunaehdot.
+            </figcaption>
+        </figure>
+
+        <h2>Projektin tausta</h2>
+
+        <p>
+            Matalien taajuuksien käyttäytymiseen vaikuttavat voimakkaasti
+            huoneen geometria, pintamateriaalit ja huonemoodit. Epäsuotuisa
+            kaiutinsijoittelu voi aiheuttaa kuuntelupaikalle suuria
+            äänenpainetason vaihteluita, jolloin bassotoisto muuttuu
+            epätasaiseksi.
+        </p>
+
+        <p>
+            Projektin tavoitteena oli määrittää numeerisen simuloinnin ja
+            optimoinnin avulla kaiuttimille sijainnit, jotka pienentävät
+            näitä vaihteluita ja tuottavat tasaisemman taajuusvasteen
+            kuuntelupaikan ympäristössä.
+        </p>
+
+        <h2>Oma roolini</h2>
+
+        <ul>
+            <li>
+                Rakensin kuunteluhuoneen akustisen FEM-mallin COMSOLissa.
+            </li>
+
+            <li>
+                Määritin pintamateriaalien akustiset
+                impedanssireunaehdot.
+            </li>
+
+            <li>
+                Toteutin taajuusalueen akustiset simuloinnit.
+            </li>
+
+            <li>
+                Toteutin kaiutinsijoittelun numeerisen optimoinnin.
+            </li>
+
+            <li>
+                Vertailin simuloituja taajuusvasteita akustisiin
+                mittauksiin.
+            </li>
+
+            <li>
+                Analysoin huonemoodeja ja kuuntelupaikan taajuusvasteita.
+            </li>
+        </ul>
+
+        <h2>Simulointiprosessi</h2>
+
+        <ol>
+            <li>Mallinnetaan kuunteluhuoneen geometria.</li>
+
+            <li>
+                Määritetään pintamateriaalien akustiset ominaisuudet.
+            </li>
+
+            <li>Muodostetaan elementtiverkko.</li>
+
+            <li>Simuloidaan akustinen painekenttä.</li>
+
+            <li>
+                Arvioidaan taajuusvasteet kuuntelijan vasemman ja oikean
+                korvan kohdalla.
+            </li>
+
+            <li>Optimoidaan kaiuttimien sijainnit.</li>
+
+            <li>Validoidaan tulokset akustisilla mittauksilla.</li>
+        </ol>
+
+        <h2>Akustinen simulointi</h2>
+
+        <p>
+            Elementtimenetelmämallilla laskettiin äänenpainetason
+            spatiaalinen jakautuminen koko kuunteluhuoneessa.
+            Simulaatioiden avulla tarkasteltiin, kuinka huoneen geometria,
+            pintojen reunaehdot ja kaiuttimien sijainnit vaikuttavat
+            matalien taajuuksien äänikenttään.
+        </p>
+
+        <p>
+            Simulaatiot osoittivat huoneeseen muodostuvat alueet, joissa
+            äänenpaine vahvistuu tai vaimenee huonemoodien ja
+            interferenssi-ilmiöiden seurauksena.
+        </p>
+
+        <figure class="project-figure">
+            <img
+                src="../../images/room-acoustics/OriginallocationsSPL.png"
+                alt="Simuloitu äänenpainetason jakautuminen kuunteluhuoneessa"
+            >
+
+            <figcaption>
+                Simuloitu äänenpainetason jakautuminen kuunteluhuoneessa
+                kaiuttimien alkuperäisillä sijainneilla.
+            </figcaption>
+        </figure>
+
+        <h2>Käytetyt teknologiat</h2>
+
+        <div class="tags">
+            <span>COMSOL</span>
+            <span>MATLAB</span>
+            <span>Huoneakustiikka</span>
+            <span>Elementtimenetelmä</span>
+            <span>Numeerinen optimointi</span>
+            <span>Taajuusalueen simulointi</span>
+        </div>
+
+        <h2>Simulointitulokset</h2>
+
+        <p>
+            Taajuusvasteet arvioitiin erikseen kuuntelijan vasemman ja
+            oikean korvan kohdalla. Lisäksi kuuntelijan sijaintia
+            siirrettiin nimellisen kuuntelupaikan ympärillä, jotta
+            ratkaisun toimivuutta voitiin arvioida useissa lähekkäisissä
+            kuuntelupisteissä.
+        </p>
+
+        <p>
+            Kaiuttimien alkuperäisten ja optimoitujen sijaintien
+            taajuusvasteita vertailtiin koko tutkitulla taajuusalueella.
+        </p>
+
+        <figure class="project-figure project-figure-half">
+            <img
+                src="../../images/room-acoustics/MovinListenerSimulations.png"
+                alt="Alkuperäisten ja optimoitujen kaiutinsijaintien simuloitujen äänenpainetasojen vertailu"
+            >
+
+            <figcaption>
+                Vasemman ja oikean korvan simuloidut äänenpainetasot
+                kuuntelijan eri sijainneissa. Optimoidut kaiutinsijainnit
+                pienentävät matalien taajuuksien voimakkaita vaihteluita
+                alkuperäiseen sijoitteluun verrattuna.
+            </figcaption>
+        </figure>
+
+        <h2>Tulokset</h2>
+
+        <p>
+            Optimoinnin avulla löydettiin kaiuttimille sijainnit, jotka
+            tuottivat tasaisemman matalien taajuuksien vasteen
+            kuuntelupaikan ympäristössä. Optimointi pienensi erityisesti
+            huonemoodien aiheuttamia voimakkaita vastevaihteluita ja
+            paransi lähellä toisiaan sijaitsevien kuuntelupisteiden
+            välistä yhdenmukaisuutta.
+        </p>
+
+        <p>
+            Simulointituloksia verrattiin kuunteluhuoneessa tehtyihin
+            akustisiin mittauksiin. Mittausten avulla arvioitiin mallin
+            kykyä ennustaa todellisen huoneen matalien taajuuksien
+            käyttäytymistä.
+        </p>
+
+        <h2>Projektissa kehitetty osaaminen</h2>
+
+        <div class="tags">
+            <span>COMSOL</span>
+            <span>Elementtimenetelmä</span>
+            <span>Numeerinen optimointi</span>
+            <span>Huoneakustiikka</span>
+            <span>MATLAB</span>
+            <span>Tieteellinen laskenta</span>
+            <span>Kokeellinen validointi</span>
+        </div>
+
+        <h2>Jatkokehitys</h2>
+
+        <p>
+            Jatkossa optimointia voitaisiin laajentaa useiden
+            kuuntelupaikkojen samanaikaiseen huomioimiseen, erilaisten
+            akustisten käsittelyratkaisujen tutkimiseen sekä nykyistä
+            laajemmalle taajuusalueelle.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ville Kallinen</p>
+    </footer>
+
+</body>
+
+</html>
