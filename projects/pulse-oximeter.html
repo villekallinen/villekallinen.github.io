@@ -1,198 +1,284 @@
-<p class="project-type">
-    Embedded Systems · Biomedical Measurement
-</p>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 class="project-page-title">
-    Arduino-Based Pulse Oximeter
-</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p class="project-introduction">
-    This university project focused on building an Arduino-based pulse
-    oximeter prototype for measuring heart rate and estimating blood
-    oxygen saturation from optical signals transmitted through a
-    fingertip.
+    <meta
+        name="description"
+        content="Arduino-based pulse oximeter prototype for estimating heart rate and blood oxygen saturation from optical fingertip measurements."
+    >
 
-    The device used red, infrared and white LEDs together with a
-    phototransistor. Heart rate was determined from the periodic
-    variation in transmitted light caused by pulsatile blood flow,
-    while oxygen saturation was estimated from the relationship
-    between the red and infrared optical signals.
-</p>
+    <title>Arduino-Based Pulse Oximeter | Ville Kallinen</title>
 
-<div class="project-summary">
+    <link rel="stylesheet" href="../style.css">
+</head>
 
-    <h2>Project Summary</h2>
+<body>
 
-    <table>
-        <tr>
-            <td><strong>Project</strong></td>
-            <td>University Engineering Project</td>
-        </tr>
+    <header class="project-hero">
+        <div class="project-hero-inner">
 
-        <tr>
-            <td><strong>University</strong></td>
-            <td>University of Eastern Finland</td>
-        </tr>
+            <a class="project-back" href="../index.html#projects">
+                ← Back to projects
+            </a>
 
-        <tr>
-            <td><strong>Status</strong></td>
-            <td>Completed</td>
-        </tr>
+            <p class="project-type">
+                Embedded Systems · Biomedical Measurement
+            </p>
 
-        <tr>
-            <td><strong>Year</strong></td>
-            <td>2022</td>
-        </tr>
+            <h1 class="project-page-title">
+                Arduino-Based Pulse Oximeter
+            </h1>
 
-        <tr>
-            <td><strong>Project Type</strong></td>
-            <td>Three-person group project</td>
-        </tr>
+            <div class="project-introduction">
+                <p>
+                    This university project focused on building an
+                    Arduino-based pulse oximeter prototype for measuring heart
+                    rate and estimating blood oxygen saturation from optical
+                    signals transmitted through a fingertip.
+                </p>
 
-        <tr>
-            <td><strong>Platform</strong></td>
-            <td>Arduino Uno</td>
-        </tr>
+                <p>
+                    The device used red, infrared and white LEDs together with
+                    a phototransistor. Heart rate was determined from periodic
+                    variations in transmitted light caused by pulsatile blood
+                    flow, while oxygen saturation was estimated from the
+                    relationship between the red and infrared optical signals.
+                </p>
+            </div>
 
-        <tr>
-            <td><strong>Programming Language</strong></td>
-            <td>Arduino C/C++</td>
-        </tr>
+        </div>
+    </header>
 
-        <tr>
-            <td><strong>Reference Device</strong></td>
-            <td>Ohmeda Biox 3700e Pulse Oximeter</td>
-        </tr>
+    <main class="project-page">
 
-        <tr>
-            <td><strong>Main Topics</strong></td>
-            <td>
-                Biomedical Measurement<br>
-                Optical Sensors<br>
-                Embedded Systems
-            </td>
-        </tr>
-    </table>
+        <section class="project-summary">
 
-</div>
+            <h2>Project Summary</h2>
 
-<img
-    class="project-main-image"
-    src="../images/pulse-oximeter/hero.png"
-    alt="Arduino-based pulse oximeter prototype"
->
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Project</th>
+                        <td>University Engineering Project</td>
+                    </tr>
 
-<h2>Project Overview</h2>
+                    <tr>
+                        <th scope="row">University</th>
+                        <td>University of Eastern Finland</td>
+                    </tr>
 
-<p>
-    Pulse oximetry is based on the different absorption characteristics
-    of oxygenated and deoxygenated blood. In this project, light from
-    red and infrared LEDs was transmitted through a fingertip and
-    measured using a phototransistor.
-</p>
+                    <tr>
+                        <th scope="row">Status</th>
+                        <td>Completed</td>
+                    </tr>
 
-<p>
-    The periodic variation in the optical signal was used to estimate
-    heart rate. Blood oxygen saturation was approximated from the
-    ratio between the pulsatile components of the red and infrared
-    measurements.
-</p>
+                    <tr>
+                        <th scope="row">Year</th>
+                        <td>2022</td>
+                    </tr>
 
-<p>
-    A white LED was also included to reduce the relative influence of
-    ambient light. The measured values were processed using an Arduino
-    Uno and displayed in real time on a 16 × 2 LCD screen.
-</p>
+                    <tr>
+                        <th scope="row">Project type</th>
+                        <td>Three-person group project</td>
+                    </tr>
 
-<h2>Project Work</h2>
+                    <tr>
+                        <th scope="row">Platform</th>
+                        <td>Arduino Uno</td>
+                    </tr>
 
-<ul>
-    <li>Assembled the measurement circuit as part of a three-person project team.</li>
+                    <tr>
+                        <th scope="row">Programming language</th>
+                        <td>Arduino C/C++</td>
+                    </tr>
 
-    <li>Connected the red, infrared and white LEDs and the phototransistor to an Arduino Uno.</li>
+                    <tr>
+                        <th scope="row">Reference device</th>
+                        <td>Ohmeda Biox 3700e pulse oximeter</td>
+                    </tr>
 
-    <li>Selected and installed the required circuit resistors.</li>
+                    <tr>
+                        <th scope="row">Main topics</th>
+                        <td>
+                            Biomedical measurement<br>
+                            Optical sensors<br>
+                            Embedded systems
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <li>Configured the I2C address of the LCD display.</li>
+        </section>
 
-    <li>Modified the calibration parameters used for oxygen-saturation estimation.</li>
+        <figure class="project-figure">
+            <img
+                src="../images/pulse-oximeter/hero.png"
+                alt="Arduino-based pulse oximeter prototype"
+            >
 
-    <li>Recorded red and infrared optical signals from a fingertip.</li>
+            <figcaption>
+                Arduino-based pulse oximeter prototype for optical
+                measurement of heart rate and blood oxygen saturation.
+            </figcaption>
+        </figure>
 
-    <li>Compared the prototype with a commercial pulse oximeter.</li>
+        <h2>Project Overview</h2>
 
-    <li>Analysed measurement accuracy and practical limitations.</li>
-</ul>
+        <p>
+            Pulse oximetry is based on differences in the absorption
+            characteristics of oxygenated and deoxygenated blood. In this
+            project, light from red and infrared LEDs was transmitted through
+            a fingertip and measured using a phototransistor.
+        </p>
 
-<h2>Measurement Principle</h2>
+        <p>
+            Periodic variations in the optical signals were used to estimate
+            heart rate. Blood oxygen saturation was approximated from the
+            relationship between the pulsatile components of the red and
+            infrared measurements.
+        </p>
 
-<ol>
-    <li>Illuminate the fingertip using red and infrared LEDs.</li>
+        <p>
+            A white LED was also included to reduce the relative influence of
+            ambient light. The measured values were processed using an
+            Arduino Uno and displayed in real time on a 16 × 2 LCD screen.
+        </p>
 
-    <li>Measure the transmitted light using a phototransistor.</li>
+        <h2>Project Work</h2>
 
-    <li>Identify periodic optical variations caused by blood flow.</li>
+        <ul>
+            <li>
+                Assembled the measurement circuit as part of a three-person
+                project team.
+            </li>
 
-    <li>Estimate heart rate from the time between successive pulse cycles.</li>
+            <li>
+                Connected the red, infrared and white LEDs and the
+                phototransistor to an Arduino Uno.
+            </li>
 
-    <li>Calculate the ratio between the red and infrared signal variations.</li>
+            <li>
+                Selected and installed the required circuit resistors.
+            </li>
 
-    <li>Convert the optical ratio into an approximate oxygen-saturation value.</li>
+            <li>Configured the I²C address of the LCD display.</li>
 
-    <li>Display the results on the LCD screen.</li>
-</ol>
+            <li>
+                Modified the calibration parameters used for oxygen
+                saturation estimation.
+            </li>
 
-<h2>Hardware and Methods</h2>
+            <li>
+                Recorded red and infrared optical signals from a fingertip.
+            </li>
 
-<div class="tags">
-    <span>Arduino Uno</span>
-    <span>Arduino C/C++</span>
-    <span>Pulse Oximetry</span>
-    <span>Optical Measurement</span>
-    <span>Phototransistor</span>
-    <span>Red LED</span>
-    <span>Infrared LED</span>
-    <span>I2C</span>
-    <span>LCD Display</span>
-    <span>Sensor Calibration</span>
-</div>
+            <li>
+                Compared the prototype with a commercial pulse oximeter.
+            </li>
 
-<h2>Results</h2>
+            <li>
+                Analysed measurement accuracy and practical limitations.
+            </li>
+        </ul>
 
-<p>
-    The prototype was able to detect pulsatile changes in the red and
-    infrared optical signals and provide estimates of heart rate and
-    blood oxygen saturation.
-</p>
+        <h2>Measurement Principle</h2>
 
-<p>
-    Measurements were compared with a commercial pulse oximeter during
-    normal breathing and breath-holding tests. The prototype produced
-    indicative oxygen-saturation values, but the results were not
-    sufficiently accurate for medical use.
-</p>
+        <ol>
+            <li>
+                Illuminate the fingertip using red and infrared LEDs.
+            </li>
 
-<h2>Skills Demonstrated</h2>
+            <li>
+                Measure the transmitted light using a phototransistor.
+            </li>
 
-<div class="tags">
-    <span>Embedded Systems</span>
-    <span>Arduino</span>
-    <span>Biomedical Measurement</span>
-    <span>Optical Sensors</span>
-    <span>Electronic Circuits</span>
-    <span>Sensor Calibration</span>
-    <span>I2C Communication</span>
-    <span>Experimental Measurement</span>
-    <span>Data Interpretation</span>
-    <span>Teamwork</span>
-</div>
+            <li>
+                Identify periodic optical variations caused by pulsatile
+                blood flow.
+            </li>
 
-<h2>Key Learning Outcomes</h2>
+            <li>
+                Estimate heart rate from the time between successive pulse
+                cycles.
+            </li>
 
-<p>
-    The project provided practical experience in optical physiological
-    measurement, Arduino-based hardware integration and sensor
-    calibration. It also demonstrated how motion, ambient light,
-    component tolerances and limited calibration data can affect the
-    reliability of biomedical measurements.
-</p>
+            <li>
+                Calculate the relationship between the pulsatile components
+                of the red and infrared signals.
+            </li>
+
+            <li>
+                Convert the optical ratio into an approximate blood oxygen
+                saturation value.
+            </li>
+
+            <li>Display the results on the LCD screen.</li>
+        </ol>
+
+        <h2>Hardware and Methods</h2>
+
+        <div class="tags">
+            <span>Arduino Uno</span>
+            <span>Arduino C/C++</span>
+            <span>Pulse Oximetry</span>
+            <span>Optical Measurement</span>
+            <span>Phototransistor</span>
+            <span>Red LED</span>
+            <span>Infrared LED</span>
+            <span>I²C</span>
+            <span>LCD Display</span>
+            <span>Sensor Calibration</span>
+        </div>
+
+        <h2>Results</h2>
+
+        <p>
+            The prototype was able to detect pulsatile changes in the red and
+            infrared optical signals and provide estimates of heart rate and
+            blood oxygen saturation.
+        </p>
+
+        <p>
+            Measurements were compared with a commercial pulse oximeter
+            during normal breathing and breath-holding tests. The prototype
+            produced indicative oxygen saturation values, but its accuracy
+            was not sufficient for medical use.
+        </p>
+
+        <h2>Skills Demonstrated</h2>
+
+        <div class="tags">
+            <span>Embedded Systems</span>
+            <span>Arduino</span>
+            <span>Biomedical Measurement</span>
+            <span>Optical Sensors</span>
+            <span>Electronic Circuits</span>
+            <span>Sensor Calibration</span>
+            <span>I²C Communication</span>
+            <span>Experimental Measurement</span>
+            <span>Data Interpretation</span>
+            <span>Teamwork</span>
+        </div>
+
+        <h2>Key Learning Outcomes</h2>
+
+        <p>
+            The project provided practical experience in optical
+            physiological measurement, Arduino-based hardware integration
+            and sensor calibration. It also demonstrated how motion, ambient
+            light, component tolerances and limited calibration data can
+            affect the reliability of biomedical measurements.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ville Kallinen</p>
+    </footer>
+
+</body>
+
+</html>
