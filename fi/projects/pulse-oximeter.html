@@ -1,199 +1,289 @@
-<p class="project-type">
-    Sulautetut järjestelmät · Biolääketieteellinen mittaus
-</p>
+<!DOCTYPE html>
+<html lang="fi">
 
-<h1 class="project-page-title">
-    Arduino-pohjainen pulssioksimetri
-</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p class="project-introduction">
-    Tässä yliopistoprojektissa rakennettiin Arduino-pohjainen
-    pulssioksimetrin prototyyppi, jolla mitattiin sykettä ja
-    arvioitiin veren happisaturaatiota sormen läpäisevistä
-    optisista signaaleista.
+    <meta
+        name="description"
+        content="Arduino-pohjainen pulssioksimetrin prototyyppi sykkeen ja veren happisaturaation arvioimiseen optisista sormenpäämittauksista."
+    >
 
-    Mittausjärjestelmässä käytettiin punaista, infrapunaista ja
-    valkoista LED-valoa sekä fototransistoria. Syke määritettiin
-    veren virtauksen aiheuttamasta läpäisevän valon jaksollisesta
-    vaihtelusta. Happisaturaatio arvioitiin punaisen ja
-    infrapunaisen optisen signaalin välisestä suhteesta.
-</p>
+    <title>Arduino-pohjainen pulssioksimetri | Ville Kallinen</title>
 
-<div class="project-summary">
+    <link rel="stylesheet" href="../../style.css">
+</head>
 
-    <h2>Projektin yhteenveto</h2>
+<body>
 
-    <table>
-        <tr>
-            <td><strong>Projekti</strong></td>
-            <td>Yliopiston projektityö</td>
-        </tr>
+    <header class="project-hero">
+        <div class="project-hero-inner">
 
-        <tr>
-            <td><strong>Yliopisto</strong></td>
-            <td>Itä-Suomen yliopisto</td>
-        </tr>
+            <a class="project-back" href="../index.html#projects">
+                ← Takaisin projekteihin
+            </a>
 
-        <tr>
-            <td><strong>Tila</strong></td>
-            <td>Valmis</td>
-        </tr>
+            <p class="project-type">
+                Sulautetut järjestelmät · Biolääketieteellinen mittaus
+            </p>
 
-        <tr>
-            <td><strong>Vuosi</strong></td>
-            <td>2022</td>
-        </tr>
+            <h1 class="project-page-title">
+                Arduino-pohjainen pulssioksimetri
+            </h1>
 
-        <tr>
-            <td><strong>Projektimuoto</strong></td>
-            <td>Kolmen hengen ryhmäprojekti</td>
-        </tr>
+            <div class="project-introduction">
+                <p>
+                    Tässä yliopistoprojektissa rakennettiin Arduino-pohjainen
+                    pulssioksimetrin prototyyppi, jolla mitattiin sykettä ja
+                    arvioitiin veren happisaturaatiota sormen läpäisevistä
+                    optisista signaaleista.
+                </p>
 
-        <tr>
-            <td><strong>Alusta</strong></td>
-            <td>Arduino Uno</td>
-        </tr>
+                <p>
+                    Mittausjärjestelmässä käytettiin punaista,
+                    infrapunaista ja valkoista LED-valoa sekä
+                    fototransistoria. Syke määritettiin sykkivän verenkierron
+                    aiheuttamasta läpäisevän valon jaksollisesta vaihtelusta,
+                    kun taas happisaturaatio arvioitiin punaisen ja
+                    infrapunaisen optisen signaalin välisestä suhteesta.
+                </p>
+            </div>
 
-        <tr>
-            <td><strong>Ohjelmointikieli</strong></td>
-            <td>Arduino C/C++</td>
-        </tr>
+        </div>
+    </header>
 
-        <tr>
-            <td><strong>Vertailulaite</strong></td>
-            <td>Ohmeda Biox 3700e -pulssioksimetri</td>
-        </tr>
+    <main class="project-page">
 
-        <tr>
-            <td><strong>Pääaiheet</strong></td>
-            <td>
-                Biolääketieteellinen mittaus<br>
-                Optiset anturit<br>
-                Sulautetut järjestelmät
-            </td>
-        </tr>
-    </table>
+        <section class="project-summary">
 
-</div>
+            <h2>Projektin yhteenveto</h2>
 
-<img
-    class="project-main-image"
-    src="../../images/pulse-oximeter/hero.png"
-    alt="Arduino-pohjainen pulssioksimetrin prototyyppi"
->
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Projekti</th>
+                        <td>Yliopiston projektityö</td>
+                    </tr>
 
-<h2>Projektin yleiskuvaus</h2>
+                    <tr>
+                        <th scope="row">Yliopisto</th>
+                        <td>Itä-Suomen yliopisto</td>
+                    </tr>
 
-<p>
-    Pulssioksimetria perustuu hapettuneen ja hapettumattoman veren
-    erilaisiin valon absorptio-ominaisuuksiin. Projektissa sormen
-    läpi johdettiin punaista ja infrapunaista valoa, jonka jälkeen
-    sormen läpäissyt valo mitattiin fototransistorilla.
-</p>
+                    <tr>
+                        <th scope="row">Tila</th>
+                        <td>Valmis</td>
+                    </tr>
 
-<p>
-    Optisen signaalin jaksollista vaihtelua käytettiin sykkeen
-    arviointiin. Veren happisaturaatio approksimoitiin punaisen ja
-    infrapunaisen mittaussignaalin vaihtelevien osien suhteesta.
-</p>
+                    <tr>
+                        <th scope="row">Vuosi</th>
+                        <td>2022</td>
+                    </tr>
 
-<p>
-    Laitteessa käytettiin lisäksi valkoista LED-valoa ympäristön
-    valaistuksen suhteellisen vaikutuksen pienentämiseksi. Arduino
-    käsitteli mittaukset ja esitti tulokset reaaliaikaisesti
-    16 × 2 -LCD-näytöllä.
-</p>
+                    <tr>
+                        <th scope="row">Projektimuoto</th>
+                        <td>Kolmen hengen ryhmäprojekti</td>
+                    </tr>
 
-<h2>Projektissa tehty työ</h2>
+                    <tr>
+                        <th scope="row">Alusta</th>
+                        <td>Arduino Uno</td>
+                    </tr>
 
-<ul>
-    <li>Mittauskytkennän kokoaminen osana kolmen hengen projektiryhmää.</li>
+                    <tr>
+                        <th scope="row">Ohjelmointikieli</th>
+                        <td>Arduino C/C++</td>
+                    </tr>
 
-    <li>Punaisen, infrapunaisen ja valkoisen LEDin sekä fototransistorin liittäminen Arduinoon.</li>
+                    <tr>
+                        <th scope="row">Vertailulaite</th>
+                        <td>Ohmeda Biox 3700e -pulssioksimetri</td>
+                    </tr>
 
-    <li>Kytkennässä tarvittavien vastusten valitseminen ja asentaminen.</li>
+                    <tr>
+                        <th scope="row">Pääteemat</th>
+                        <td>
+                            Biolääketieteellinen mittaus<br>
+                            Optiset anturit<br>
+                            Sulautetut järjestelmät
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <li>LCD-näytön I2C-osoitteen selvittäminen ja määrittäminen.</li>
+        </section>
 
-    <li>Happisaturaation laskennassa käytettyjen kalibrointiparametrien muokkaaminen.</li>
+        <figure class="project-figure">
+            <img
+                src="../../images/pulse-oximeter/hero.png"
+                alt="Arduino-pohjainen pulssioksimetrin prototyyppi"
+            >
 
-    <li>Punaisen ja infrapunaisen optisen signaalin mittaaminen sormesta.</li>
+            <figcaption>
+                Arduino-pohjainen pulssioksimetrin prototyyppi sykkeen ja
+                veren happisaturaation optiseen arviointiin.
+            </figcaption>
+        </figure>
 
-    <li>Prototyypin mittaustulosten vertaaminen kaupalliseen pulssioksimetriin.</li>
+        <h2>Projektin yleiskuvaus</h2>
 
-    <li>Mittaustarkkuuden ja menetelmän rajoitusten arviointi.</li>
-</ul>
+        <p>
+            Pulssioksimetria perustuu hapettuneen ja hapettumattoman veren
+            erilaisiin valon absorptio-ominaisuuksiin. Projektissa sormen
+            läpi johdettiin punaista ja infrapunaista valoa, minkä jälkeen
+            sormen läpäissyt valo mitattiin fototransistorilla.
+        </p>
 
-<h2>Mittausperiaate</h2>
+        <p>
+            Optisten signaalien jaksollista vaihtelua käytettiin sykkeen
+            arviointiin. Veren happisaturaatio approksimoitiin punaisen ja
+            infrapunaisen mittaussignaalin sykkivien komponenttien välisestä
+            suhteesta.
+        </p>
 
-<ol>
-    <li>Sormi valaistaan punaisella ja infrapunaisella LED-valolla.</li>
+        <p>
+            Laitteessa käytettiin lisäksi valkoista LED-valoa ympäristön
+            valaistuksen suhteellisen vaikutuksen pienentämiseksi.
+            Arduino Uno käsitteli mittaukset ja esitti tulokset
+            reaaliaikaisesti 16 × 2 -LCD-näytöllä.
+        </p>
 
-    <li>Sormen läpäissyt valo mitataan fototransistorilla.</li>
+        <h2>Projektissa tehty työ</h2>
 
-    <li>Signaalista tunnistetaan veren virtauksen aiheuttama jaksollinen vaihtelu.</li>
+        <ul>
+            <li>
+                Kokosin mittauskytkentää osana kolmen hengen projektiryhmää.
+            </li>
 
-    <li>Syke arvioidaan peräkkäisten pulssijaksojen välisestä ajasta.</li>
+            <li>
+                Liitin punaisen, infrapunaisen ja valkoisen LEDin sekä
+                fototransistorin Arduino Unoon.
+            </li>
 
-    <li>Punaisen ja infrapunaisen signaalin vaihteluiden välinen suhde lasketaan.</li>
+            <li>
+                Valitsin ja asensin kytkennässä tarvittavat vastukset.
+            </li>
 
-    <li>Optinen suhdeluku muunnetaan happisaturaation arvioksi.</li>
+            <li>
+                Selvitin ja määritin LCD-näytön I²C-osoitteen.
+            </li>
 
-    <li>Tulokset esitetään LCD-näytöllä.</li>
-</ol>
+            <li>
+                Muokkasin happisaturaation estimoinnissa käytettyjä
+                kalibrointiparametreja.
+            </li>
 
-<h2>Laitteisto ja menetelmät</h2>
+            <li>
+                Mittasin punaisia ja infrapunaisia optisia signaaleja
+                sormenpäästä.
+            </li>
 
-<div class="tags">
-    <span>Arduino Uno</span>
-    <span>Arduino C/C++</span>
-    <span>Pulssioksimetria</span>
-    <span>Optinen mittaus</span>
-    <span>Fototransistori</span>
-    <span>Punainen LED</span>
-    <span>Infrapuna-LED</span>
-    <span>I2C</span>
-    <span>LCD-näyttö</span>
-    <span>Anturin kalibrointi</span>
-</div>
+            <li>
+                Vertailin prototyypin mittaustuloksia kaupalliseen
+                pulssioksimetriin.
+            </li>
 
-<h2>Tulokset</h2>
+            <li>
+                Arvioin mittaustarkkuutta ja menetelmän käytännön
+                rajoituksia.
+            </li>
+        </ul>
 
-<p>
-    Prototyyppi pystyi havaitsemaan punaisessa ja infrapunaisessa
-    optisessa signaalissa näkyvän pulssin aiheuttaman vaihtelun
-    sekä tuottamaan arviot sykkeestä ja veren happisaturaatiosta.
-</p>
+        <h2>Mittausperiaate</h2>
 
-<p>
-    Mittauksia verrattiin kaupalliseen pulssioksimetriin normaalin
-    hengityksen ja hengityksen pidättämisen aikana. Prototyyppi
-    tuotti suuntaa antavia happisaturaatioarvoja, mutta tulokset
-    eivät olleet riittävän tarkkoja lääketieteelliseen käyttöön.
-</p>
+        <ol>
+            <li>
+                Sormi valaistaan punaisella ja infrapunaisella LED-valolla.
+            </li>
 
-<h2>Projektissa osoitetut taidot</h2>
+            <li>
+                Sormen läpäissyt valo mitataan fototransistorilla.
+            </li>
 
-<div class="tags">
-    <span>Sulautetut järjestelmät</span>
-    <span>Arduino</span>
-    <span>Biolääketieteellinen mittaus</span>
-    <span>Optiset anturit</span>
-    <span>Elektroniikkakytkennät</span>
-    <span>Anturin kalibrointi</span>
-    <span>I2C-tiedonsiirto</span>
-    <span>Kokeellinen mittaaminen</span>
-    <span>Tulosten analysointi</span>
-    <span>Ryhmätyö</span>
-</div>
+            <li>
+                Signaaleista tunnistetaan sykkivän verenkierron aiheuttama
+                jaksollinen vaihtelu.
+            </li>
 
-<h2>Keskeiset opit</h2>
+            <li>
+                Syke arvioidaan peräkkäisten pulssijaksojen välisestä ajasta.
+            </li>
 
-<p>
-    Projekti tarjosi käytännön kokemusta fysiologisten signaalien
-    optisesta mittaamisesta, Arduino-pohjaisen laitteiston
-    rakentamisesta ja anturin kalibroinnista. Projekti osoitti myös,
-    kuinka liike, ympäristön valaistus, komponenttien toleranssit ja
-    rajallinen kalibrointidata vaikuttavat biolääketieteellisen
-    mittauksen luotettavuuteen.
-</p>
+            <li>
+                Lasketaan punaisen ja infrapunaisen signaalin sykkivien
+                komponenttien välinen suhde.
+            </li>
+
+            <li>
+                Optinen suhdeluku muunnetaan veren happisaturaation arvioksi.
+            </li>
+
+            <li>Tulokset esitetään LCD-näytöllä.</li>
+        </ol>
+
+        <h2>Laitteisto ja menetelmät</h2>
+
+        <div class="tags">
+            <span>Arduino Uno</span>
+            <span>Arduino C/C++</span>
+            <span>Pulssioksimetria</span>
+            <span>Optinen mittaus</span>
+            <span>Fototransistori</span>
+            <span>Punainen LED</span>
+            <span>Infrapuna-LED</span>
+            <span>I²C</span>
+            <span>LCD-näyttö</span>
+            <span>Anturin kalibrointi</span>
+        </div>
+
+        <h2>Tulokset</h2>
+
+        <p>
+            Prototyyppi pystyi havaitsemaan punaisissa ja infrapunaisissa
+            optisissa signaaleissa näkyvän pulssin aiheuttaman vaihtelun
+            sekä tuottamaan arviot sykkeestä ja veren happisaturaatiosta.
+        </p>
+
+        <p>
+            Mittauksia verrattiin kaupalliseen pulssioksimetriin normaalin
+            hengityksen ja hengityksen pidättämisen aikana. Prototyyppi
+            tuotti suuntaa antavia happisaturaatioarvoja, mutta sen
+            mittaustarkkuus ei ollut riittävä lääketieteelliseen käyttöön.
+        </p>
+
+        <h2>Projektissa kehitetty osaaminen</h2>
+
+        <div class="tags">
+            <span>Sulautetut järjestelmät</span>
+            <span>Arduino</span>
+            <span>Biolääketieteellinen mittaus</span>
+            <span>Optiset anturit</span>
+            <span>Elektroniikkakytkennät</span>
+            <span>Anturin kalibrointi</span>
+            <span>I²C-tiedonsiirto</span>
+            <span>Kokeellinen mittaaminen</span>
+            <span>Tulosten analysointi</span>
+            <span>Ryhmätyö</span>
+        </div>
+
+        <h2>Keskeiset opit</h2>
+
+        <p>
+            Projekti tarjosi käytännön kokemusta fysiologisten signaalien
+            optisesta mittaamisesta, Arduino-pohjaisen laitteiston
+            rakentamisesta ja anturin kalibroinnista. Projekti osoitti myös,
+            kuinka liike, ympäristön valaistus, komponenttien toleranssit ja
+            rajallinen kalibrointidata vaikuttavat biolääketieteellisten
+            mittausten luotettavuuteen.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ville Kallinen</p>
+    </footer>
+
+</body>
+
+</html>
