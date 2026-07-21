@@ -1,264 +1,361 @@
-<p class="project-type">
-    Inverse Problems · Computational Imaging
-</p>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 class="project-page-title">
-    Tomographic Image Reconstruction
-    from Gamma-Ray Measurements
-</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p class="project-introduction">
-    This computational imaging project investigated the basic
-    principles of tomography by reconstructing an image from
-    gamma-ray attenuation measurements.
-
-    An unknown object was represented using an 8 × 8 pixel grid.
-    The attenuation coefficient of each pixel was estimated from
-    measurements collected along multiple projection paths using
-    least-squares estimation and regularisation methods.
-</p>
-
-<div class="project-summary">
-
-    <h2>Project Summary</h2>
-
-    <table>
-        <tr>
-            <td><strong>Project</strong></td>
-            <td>Data Analysis Course Project</td>
-        </tr>
-
-        <tr>
-            <td><strong>University</strong></td>
-            <td>University of Eastern Finland</td>
-        </tr>
-
-        <tr>
-            <td><strong>Status</strong></td>
-            <td>Completed</td>
-        </tr>
-
-        <tr>
-            <td><strong>Duration</strong></td>
-            <td>2023–2024</td>
-        </tr>
-
-        <tr>
-            <td><strong>Programming Language</strong></td>
-            <td>MATLAB</td>
-        </tr>
-
-        <tr>
-            <td><strong>Imaging Source</strong></td>
-            <td>Americium-241 Gamma-Ray Source</td>
-        </tr>
-
-        <tr>
-            <td><strong>Image Resolution</strong></td>
-            <td>8 × 8 pixels</td>
-        </tr>
-
-        <tr>
-            <td><strong>Main Topics</strong></td>
-            <td>
-                Inverse Problems<br>
-                Tomographic Reconstruction<br>
-                Regularisation
-            </td>
-        </tr>
-    </table>
-
-</div>
-
-<img
-    class="project-main-image"
-    src="../images/tomography/reconstruction.png"
-    alt="Tomographic image reconstructed from gamma-ray measurements"
->
-
-<h2>Project Overview</h2>
-
-<p>
-    Tomographic imaging reconstructs the internal structure of an
-    object from measurements collected along several projection
-    directions. In this project, gamma radiation was transmitted
-    through a measurement target and the remaining radiation was
-    recorded using a detector.
-</p>
-
-<p>
-    The target was divided into 64 pixels. Each measurement was
-    modelled as a combination of the path lengths travelled through
-    the pixels and their unknown attenuation coefficients.
-</p>
-
-<p>
-    The resulting inverse problem was solved using least-squares
-    estimation. Because incomplete projection data produced
-    ill-conditioned observation matrices, regularisation methods
-    were used to improve solution stability and image quality.
-</p>
-
-<h2>My Contribution</h2>
-
-<ul>
-    <li>Performed gamma-ray attenuation measurements at multiple projection angles.</li>
-
-    <li>Calculated the path length of each measurement ray through the 8 × 8 pixel grid.</li>
-
-    <li>Constructed observation matrices for different measurement configurations.</li>
-
-    <li>Implemented least-squares image reconstruction in MATLAB.</li>
-
-    <li>Calculated and compared matrix condition numbers.</li>
-
-    <li>Implemented standard Tikhonov regularisation.</li>
-
-    <li>Implemented regularisation using a first-order difference matrix.</li>
-
-    <li>Compared reconstructions generated from different amounts of measurement data.</li>
-
-    <li>Extended the observation model to account for the surrounding plastic shell.</li>
-
-    <li>Estimated the attenuation coefficient of the plastic material.</li>
-</ul>
-
-<h2>Reconstruction Workflow</h2>
-
-<ol>
-    <li>Divide the imaging target into an 8 × 8 pixel grid.</li>
-
-    <li>Measure gamma-ray attenuation along several projection paths.</li>
-
-    <li>Calculate the distance travelled by each ray inside every pixel.</li>
-
-    <li>Construct the observation matrix from the calculated path lengths.</li>
-
-    <li>Form the observation vector from the measured attenuation values.</li>
-
-    <li>Estimate pixel attenuation coefficients using least squares.</li>
-
-    <li>Evaluate the conditioning of the observation matrix.</li>
-
-    <li>Apply Tikhonov regularisation to stabilise the reconstruction.</li>
-
-    <li>Apply first-order difference regularisation to encourage spatial smoothness.</li>
-
-    <li>Reshape the estimated attenuation coefficients into a two-dimensional image.</li>
-</ol>
-
-<h2>Measurement Geometry</h2>
-
-<p>
-    The attenuation measurements were collected from several
-    projection angles around the imaging target. Each gamma ray
-    travelled through multiple pixels, and the distance travelled
-    inside each pixel determined its contribution to the observation
-    matrix used for image reconstruction.
-</p>
-
-<p>
-    Eight different projection directions were used to improve the
-    conditioning of the inverse problem and increase reconstruction
-    accuracy.
-</p>
-
-<figure class="project-figure">
-    <img
-        src="../images/tomography/Measurements.png"
-        alt="Measurement geometry and projection angles used for tomographic reconstruction"
+    <meta
+        name="description"
+        content="Tomographic image reconstruction from gamma-ray attenuation measurements using least-squares estimation and regularisation methods."
     >
 
-    <figcaption>
-        Measurement geometry showing the eight projection directions
-        used to construct the tomographic observation matrix.
-    </figcaption>
-</figure>
+    <title>Tomographic Image Reconstruction | Ville Kallinen</title>
 
-<h2>Methods</h2>
+    <link rel="stylesheet" href="../style.css">
+</head>
 
-<div class="tags">
-    <span>MATLAB</span>
-    <span>Tomography</span>
-    <span>Inverse Problems</span>
-    <span>Least Squares</span>
-    <span>Tikhonov Regularisation</span>
-    <span>Difference Regularisation</span>
-    <span>Matrix Conditioning</span>
-    <span>Gamma-Ray Attenuation</span>
-    <span>Computational Imaging</span>
-    <span>Image Reconstruction</span>
-</div>
+<body>
 
-<h2>Inverse Problem</h2>
+    <header class="project-hero">
+        <div class="project-hero-inner">
 
-<p>
-    The attenuation measurements were represented using a linear
-    observation model in which the unknown vector contained the
-    attenuation coefficient of each pixel. The observation matrix
-    described the distance travelled by each gamma ray inside each
-    pixel.
-</p>
+            <a class="project-back" href="../index.html#projects">
+                ← Back to projects
+            </a>
 
-<p>
-    With limited projection data, the observation matrix became
-    poorly conditioned. This made the direct least-squares solution
-    sensitive to measurement noise and resulted in unstable or
-    unclear reconstructions.
-</p>
+            <p class="project-type">
+                Inverse Problems · Computational Imaging
+            </p>
 
-<h2>Regularisation</h2>
+            <h1 class="project-page-title">
+                Tomographic Image Reconstruction from Gamma-Ray Measurements
+            </h1>
 
-<p>
-    Tikhonov regularisation was used to constrain the solution and
-    reduce the amplification of measurement errors. A first-order
-    difference matrix was also tested to penalise large differences
-    between neighbouring parameter values.
-</p>
+            <div class="project-introduction">
+                <p>
+                    This computational imaging project investigated the
+                    fundamental principles of tomography by reconstructing an
+                    image from gamma-ray attenuation measurements.
+                </p>
 
-<p>
-    The regularised reconstructions were compared with the ordinary
-    least-squares solution and with reconstructions generated from
-    observation matrices of different conditioning.
-</p>
+                <p>
+                    An unknown object was represented using an 8 × 8 pixel
+                    grid. The attenuation coefficient of each pixel was
+                    estimated from measurements collected along multiple
+                    projection paths using least-squares estimation and
+                    regularisation methods.
+                </p>
+            </div>
 
-<h2>Results</h2>
+        </div>
+    </header>
 
-<p>
-    The internal structure of the measurement target could be
-    reconstructed from the gamma-ray attenuation measurements.
-    Reconstructions based on limited or poorly distributed data
-    were visibly affected by matrix ill-conditioning.
-</p>
+    <main class="project-page">
 
-<p>
-    Regularisation improved the stability and interpretability of
-    the reconstructed images. The project also demonstrated that
-    explicitly modelling the surrounding plastic shell affected the
-    estimated attenuation distribution and allowed the shell's
-    attenuation coefficient to be estimated.
-</p>
+        <section class="project-summary">
 
-<h2>Skills Demonstrated</h2>
+            <h2>Project Summary</h2>
 
-<div class="tags">
-    <span>MATLAB</span>
-    <span>Inverse Problems</span>
-    <span>Computational Imaging</span>
-    <span>Linear Algebra</span>
-    <span>Regularisation</span>
-    <span>Matrix Analysis</span>
-    <span>Least-Squares Estimation</span>
-    <span>Physical Modelling</span>
-    <span>Experimental Data Analysis</span>
-    <span>Scientific Reporting</span>
-</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Project</th>
+                        <td>Data Analysis Course Project</td>
+                    </tr>
 
-<h2>Key Learning Outcomes</h2>
+                    <tr>
+                        <th scope="row">University</th>
+                        <td>University of Eastern Finland</td>
+                    </tr>
 
-<p>
-    The project provided practical experience in formulating and
-    solving an inverse imaging problem. It demonstrated how
-    measurement geometry, matrix conditioning and regularisation
-    affect the stability and spatial quality of reconstructed images.
-</p>
+                    <tr>
+                        <th scope="row">Status</th>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Duration</th>
+                        <td>2023–2024</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Programming language</th>
+                        <td>MATLAB</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Imaging source</th>
+                        <td>Americium-241 gamma-ray source</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Image resolution</th>
+                        <td>8 × 8 pixels</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Main topics</th>
+                        <td>
+                            Inverse problems<br>
+                            Tomographic reconstruction<br>
+                            Regularisation
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <figure class="project-figure">
+            <img
+                src="../images/tomography/reconstruction.png"
+                alt="Tomographic image reconstructed from gamma-ray attenuation measurements"
+            >
+
+            <figcaption>
+                Tomographic image reconstructed from experimental gamma-ray
+                attenuation measurements.
+            </figcaption>
+        </figure>
+
+        <h2>Project Overview</h2>
+
+        <p>
+            Tomographic imaging reconstructs the internal structure of an
+            object from measurements collected along several projection
+            directions. In this project, gamma radiation was transmitted
+            through a measurement target and the remaining radiation was
+            recorded using a detector.
+        </p>
+
+        <p>
+            The target was divided into 64 pixels. Each measurement was
+            modelled as a combination of the path lengths travelled through
+            the pixels and their unknown attenuation coefficients.
+        </p>
+
+        <p>
+            The resulting inverse problem was solved using least-squares
+            estimation. Because incomplete projection data produced
+            ill-conditioned observation matrices, regularisation methods
+            were used to improve solution stability and image quality.
+        </p>
+
+        <h2>My Contribution</h2>
+
+        <ul>
+            <li>
+                Performed gamma-ray attenuation measurements at multiple
+                projection angles.
+            </li>
+
+            <li>
+                Calculated the path length of each measurement ray through
+                the 8 × 8 pixel grid.
+            </li>
+
+            <li>
+                Constructed observation matrices for different measurement
+                configurations.
+            </li>
+
+            <li>
+                Implemented least-squares image reconstruction in MATLAB.
+            </li>
+
+            <li>Calculated and compared matrix condition numbers.</li>
+
+            <li>Implemented standard Tikhonov regularisation.</li>
+
+            <li>
+                Implemented regularisation using a first-order difference
+                matrix.
+            </li>
+
+            <li>
+                Compared reconstructions generated from different amounts
+                of measurement data.
+            </li>
+
+            <li>
+                Extended the observation model to account for the surrounding
+                plastic shell.
+            </li>
+
+            <li>
+                Estimated the attenuation coefficient of the plastic material.
+            </li>
+        </ul>
+
+        <h2>Reconstruction Workflow</h2>
+
+        <ol>
+            <li>Divide the imaging target into an 8 × 8 pixel grid.</li>
+
+            <li>
+                Measure gamma-ray attenuation along several projection paths.
+            </li>
+
+            <li>
+                Calculate the distance travelled by each ray inside every
+                pixel.
+            </li>
+
+            <li>
+                Construct the observation matrix from the calculated path
+                lengths.
+            </li>
+
+            <li>
+                Form the observation vector from the measured attenuation
+                values.
+            </li>
+
+            <li>
+                Estimate the pixel attenuation coefficients using least
+                squares.
+            </li>
+
+            <li>Evaluate the conditioning of the observation matrix.</li>
+
+            <li>
+                Apply Tikhonov regularisation to stabilise the reconstruction.
+            </li>
+
+            <li>
+                Apply first-order difference regularisation to encourage
+                spatial smoothness.
+            </li>
+
+            <li>
+                Reshape the estimated attenuation coefficients into a
+                two-dimensional image.
+            </li>
+        </ol>
+
+        <h2>Measurement Geometry</h2>
+
+        <p>
+            The attenuation measurements were collected from several
+            projection angles around the imaging target. Each gamma ray
+            travelled through multiple pixels, and the distance travelled
+            inside each pixel determined its contribution to the observation
+            matrix used for image reconstruction.
+        </p>
+
+        <p>
+            Eight different projection directions were used to improve the
+            conditioning of the inverse problem and increase reconstruction
+            accuracy.
+        </p>
+
+        <figure class="project-figure">
+            <img
+                src="../images/tomography/Measurements.png"
+                alt="Measurement geometry and projection angles used for tomographic reconstruction"
+            >
+
+            <figcaption>
+                Measurement geometry showing the eight projection directions
+                used to construct the tomographic observation matrix.
+            </figcaption>
+        </figure>
+
+        <h2>Methods</h2>
+
+        <div class="tags">
+            <span>MATLAB</span>
+            <span>Tomography</span>
+            <span>Inverse Problems</span>
+            <span>Least Squares</span>
+            <span>Tikhonov Regularisation</span>
+            <span>Difference Regularisation</span>
+            <span>Matrix Conditioning</span>
+            <span>Gamma-Ray Attenuation</span>
+            <span>Computational Imaging</span>
+            <span>Image Reconstruction</span>
+        </div>
+
+        <h2>Inverse Problem</h2>
+
+        <p>
+            The attenuation measurements were represented using a linear
+            observation model in which the unknown vector contained the
+            attenuation coefficient of each pixel. The observation matrix
+            described the distance travelled by each gamma ray inside each
+            pixel.
+        </p>
+
+        <p>
+            With limited projection data, the observation matrix became
+            poorly conditioned. This made the direct least-squares solution
+            sensitive to measurement noise and resulted in unstable or
+            unclear reconstructions.
+        </p>
+
+        <h2>Regularisation</h2>
+
+        <p>
+            Tikhonov regularisation was used to constrain the solution and
+            reduce the amplification of measurement errors. A first-order
+            difference matrix was also tested to penalise large differences
+            between neighbouring parameter values.
+        </p>
+
+        <p>
+            The regularised reconstructions were compared with the ordinary
+            least-squares solution and with reconstructions generated from
+            observation matrices with different levels of conditioning.
+        </p>
+
+        <h2>Results</h2>
+
+        <p>
+            The internal structure of the measurement target could be
+            reconstructed from the gamma-ray attenuation measurements.
+            Reconstructions based on limited or poorly distributed data
+            were visibly affected by matrix ill-conditioning.
+        </p>
+
+        <p>
+            Regularisation improved the stability and interpretability of
+            the reconstructed images. The project also demonstrated that
+            explicitly modelling the surrounding plastic shell affected the
+            estimated attenuation distribution and allowed the attenuation
+            coefficient of the shell material to be estimated.
+        </p>
+
+        <h2>Skills Demonstrated</h2>
+
+        <div class="tags">
+            <span>MATLAB</span>
+            <span>Inverse Problems</span>
+            <span>Computational Imaging</span>
+            <span>Linear Algebra</span>
+            <span>Regularisation</span>
+            <span>Matrix Analysis</span>
+            <span>Least-Squares Estimation</span>
+            <span>Physical Modelling</span>
+            <span>Experimental Data Analysis</span>
+            <span>Scientific Reporting</span>
+        </div>
+
+        <h2>Key Learning Outcomes</h2>
+
+        <p>
+            The project provided practical experience in formulating and
+            solving an inverse imaging problem. It demonstrated how
+            measurement geometry, matrix conditioning and regularisation
+            affect the stability and spatial quality of reconstructed images.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ville Kallinen</p>
+    </footer>
+
+</body>
+
+</html>
