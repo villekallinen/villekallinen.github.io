@@ -1,214 +1,310 @@
-<p class="project-type">
-    Data-analyysi · Parametrien estimointi
-</p>
+<!DOCTYPE html>
+<html lang="fi">
 
-<h1 class="project-page-title">
-    Parametrien estimointi kaltevalla tasolla
-</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p class="project-introduction">
-    Tässä kokeellisessa data-analyysiprojektissa estimoitiin
-    fysikaalisia parametreja kaltevalla tasolla mitatusta
-    liikedatasta.
+    <meta
+        name="description"
+        content="Kokeellinen data-analyysiprojekti, jossa estimoitiin hitausmomentteja ja liikekitkakerrointa kaltevalla tasolla tehtyjen mittausten avulla."
+    >
 
-    Kahden sylinterin hitausmomentit sekä liukuvan suorakulmaisen
-    kappaleen liikekitkakerroin estimoitiin lineaarisilla,
-    epälineaarisilla ja painotetuilla pienimmän neliösumman
-    menetelmillä.
-</p>
+    <title>Parametrien estimointi kaltevalla tasolla | Ville Kallinen</title>
 
-<div class="project-summary">
+    <link rel="stylesheet" href="../../style.css">
+</head>
 
-    <h2>Projektin yhteenveto</h2>
+<body>
 
-    <table>
-        <tr>
-            <td><strong>Projekti</strong></td>
-            <td>Data-analyysin kurssiprojekti</td>
-        </tr>
+    <header class="project-hero">
+        <div class="project-hero-inner">
 
-        <tr>
-            <td><strong>Yliopisto</strong></td>
-            <td>Itä-Suomen yliopisto</td>
-        </tr>
+            <a class="project-back" href="../index.html#projects">
+                ← Takaisin projekteihin
+            </a>
 
-        <tr>
-            <td><strong>Tila</strong></td>
-            <td>Valmis</td>
-        </tr>
+            <p class="project-type">
+                Data-analyysi · Parametrien estimointi
+            </p>
 
-        <tr>
-            <td><strong>Vuosi</strong></td>
-            <td>2024</td>
-        </tr>
+            <h1 class="project-page-title">
+                Parametrien estimointi kaltevalla tasolla
+            </h1>
 
-        <tr>
-            <td><strong>Ohjelmointikieli</strong></td>
-            <td>MATLAB</td>
-        </tr>
+            <div class="project-introduction">
+                <p>
+                    Tässä kokeellisessa data-analyysiprojektissa estimoitiin
+                    fysikaalisia parametreja kaltevalla tasolla mitatusta
+                    liikedatasta.
+                </p>
 
-        <tr>
-            <td><strong>Mitatut suureet</strong></td>
-            <td>Kulkuaika ja kaltevuuskulma</td>
-        </tr>
+                <p>
+                    Kahden sylinterin hitausmomentit sekä liukuvan
+                    suorakulmaisen kappaleen liikekitkakerroin estimoitiin
+                    lineaarisilla, epälineaarisilla ja painotetuilla
+                    pienimmän neliösumman menetelmillä.
+                </p>
+            </div>
 
-        <tr>
-            <td><strong>Estimoidut parametrit</strong></td>
-            <td>Hitausmomentti ja liikekitkakerroin</td>
-        </tr>
+        </div>
+    </header>
 
-        <tr>
-            <td><strong>Pääaiheet</strong></td>
-            <td>
-                Parametrien estimointi<br>
-                Pienimmän neliösumman menetelmät<br>
-                Kokeellinen mekaniikka
-            </td>
-        </tr>
-    </table>
+    <main class="project-page">
 
-</div>
+        <section class="project-summary">
 
-<img
-    class="project-main-image"
-    src="../../images/inclined-plane/hero.png"
-    alt="Kaltevalla tasolla käytetty mittausjärjestely"
->
+            <h2>Projektin yhteenveto</h2>
 
-<h2>Projektin yleiskuvaus</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Projekti</th>
+                        <td>Data-analyysin kurssiprojekti</td>
+                    </tr>
 
-<p>
-    Projektin tavoitteena oli estimoida mekaanisia parametreja,
-    joita ei voitu mitata suoraan. Sylinterin muotoisten kappaleiden
-    annettiin vieriä kaltevaa tasoa pitkin ja suorakulmaisen
-    kappaleen annettiin liukua samaa pintaa pitkin.
-</p>
+                    <tr>
+                        <th scope="row">Yliopisto</th>
+                        <td>Itä-Suomen yliopisto</td>
+                    </tr>
 
-<p>
-    Tunnettujen pisteiden välinen kulkuaika mitattiin kahdella
-    oskilloskooppiin liitetyllä valoportilla. Mittaukset toistettiin
-    useilla kaltevuuskulmilla parametrien estimointiin soveltuvan
-    aineiston muodostamiseksi.
-</p>
+                    <tr>
+                        <th scope="row">Tila</th>
+                        <td>Valmis</td>
+                    </tr>
 
-<p>
-    Newtonin etenemis- ja pyörimisliikkeen yhtälöistä johdettiin
-    mittausjärjestelyä kuvaavat havaintomallit. Tuntemattomat
-    parametrit ratkaistiin sovittamalla mallit kokeellisiin
-    mittauksiin.
-</p>
+                    <tr>
+                        <th scope="row">Vuosi</th>
+                        <td>2024</td>
+                    </tr>
 
-<h2>Oma työpanos</h2>
+                    <tr>
+                        <th scope="row">Ohjelmointikieli</th>
+                        <td>MATLAB</td>
+                    </tr>
 
-<ul>
-    <li>Kaltevalla tasolla tehtyjen mittausten suunnittelu ja suorittaminen.</li>
+                    <tr>
+                        <th scope="row">Mitatut suureet</th>
+                        <td>Kulkuaika ja kaltevuuskulma</td>
+                    </tr>
 
-    <li>Kulkuaikojen mittaaminen valoporttien ja oskilloskoopin avulla.</li>
+                    <tr>
+                        <th scope="row">Estimoidut parametrit</th>
+                        <td>Hitausmomentti ja liikekitkakerroin</td>
+                    </tr>
 
-    <li>Vierivän ja liukuvan kappaleen havaintomallien johtaminen.</li>
+                    <tr>
+                        <th scope="row">Pääteemat</th>
+                        <td>
+                            Parametrien estimointi<br>
+                            Pienimmän neliösumman menetelmät<br>
+                            Kokeellinen mekaniikka
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <li>Epälineaarisen PNS-estimoinnin toteuttaminen MATLABilla.</li>
+        </section>
 
-    <li>Painotetun epälineaarisen PNS-estimoinnin toteuttaminen.</li>
+        <figure class="project-figure">
+            <img
+                src="../../images/inclined-plane/hero.png"
+                alt="Kaltevalla tasolla käytetty kokeellinen mittausjärjestely"
+            >
 
-    <li>Vierivän kappaleen havaintomallin linearisointi.</li>
+            <figcaption>
+                Kaltevan tason mittausjärjestely mekaanisten parametrien
+                estimoimiseksi vierivien ja liukuvien kappaleiden liikkeestä.
+            </figcaption>
+        </figure>
 
-    <li>Lineaarisen PNS-estimoinnin toteuttaminen vertailua varten.</li>
+        <h2>Projektin yleiskuvaus</h2>
 
-    <li>Parametrien epävarmuuksien arviointi ja menetelmien vertailu.</li>
+        <p>
+            Projektin tavoitteena oli estimoida mekaanisia parametreja,
+            joita ei voitu mitata suoraan. Sylinterin muotoisten kappaleiden
+            annettiin vieriä kaltevaa tasoa pitkin, kun taas suorakulmaisen
+            kappaleen annettiin liukua samaa pintaa pitkin.
+        </p>
 
-    <li>Estimoitujen hitausmomenttien vertaaminen teoreettisiin arvoihin.</li>
-</ul>
+        <p>
+            Tunnettujen pisteiden välinen kulkuaika mitattiin kahdella
+            oskilloskooppiin liitetyllä valoportilla. Mittaukset toistettiin
+            useilla kaltevuuskulmilla parametrien estimointiin soveltuvan
+            aineiston muodostamiseksi.
+        </p>
 
-<h2>Analyysin vaiheet</h2>
+        <p>
+            Mittausjärjestelyä kuvaavat havaintomallit johdettiin Newtonin
+            etenemis- ja pyörimisliikkeen yhtälöistä. Tuntemattomat
+            parametrit ratkaistiin sovittamalla mallit kokeellisiin
+            mittauksiin.
+        </p>
 
-<ol>
-    <li>Mitataan kappaleiden mitat, massat ja koejärjestelyn geometria.</li>
+        <h2>Oma työpanokseni</h2>
 
-    <li>Asetetaan kalteva taso tunnettuun kaltevuuskulmaan.</li>
+        <ul>
+            <li>
+                Suunnittelin ja toteutin kaltevalla tasolla tehdyt mittaukset.
+            </li>
 
-    <li>Mitataan kappaleen kulkuaika kahden valoportin välillä.</li>
+            <li>
+                Mittasin kulkuaikoja valoporttien ja oskilloskoopin avulla.
+            </li>
 
-    <li>Toistetaan jokainen mittaus useita kertoja.</li>
+            <li>
+                Johdin havaintomallit vieriville ja liukuville kappaleille.
+            </li>
 
-    <li>Lasketaan mittausten keskiarvot ja epävarmuudet.</li>
+            <li>
+                Toteutin epälineaarisen PNS-estimoinnin MATLABilla.
+            </li>
 
-    <li>Muodostetaan liikeyhtälöihin perustuvat epälineaariset havaintomallit.</li>
+            <li>
+                Toteutin painotetun epälineaarisen PNS-estimoinnin.
+            </li>
 
-    <li>Estimoidaan tuntemattomat parametrit epälineaarisella PNS-menetelmällä.</li>
+            <li>Linearisoin vierivän kappaleen havaintomallin.</li>
 
-    <li>Sovelletaan mittausepävarmuuksiin perustuvaa painotettua PNS-estimointia.</li>
+            <li>
+                Toteutin lineaarisen PNS-estimoinnin menetelmien vertailua
+                varten.
+            </li>
 
-    <li>Linearisoidaan vierivän kappaleen malli ja tehdään lineaarinen estimointi.</li>
+            <li>
+                Arvioin parametrien epävarmuuksia ja vertailin
+                estimointimenetelmiä.
+            </li>
 
-    <li>Verrataan kokeellisia estimaatteja teoreettisiin parametrien arvoihin.</li>
-</ol>
+            <li>
+                Vertailin estimoituja hitausmomentteja teoreettisiin arvoihin.
+            </li>
+        </ul>
 
-<h2>Menetelmät</h2>
+        <h2>Analyysin vaiheet</h2>
 
-<div class="tags">
-    <span>MATLAB</span>
-    <span>Epälineaarinen PNS</span>
-    <span>Painotettu PNS</span>
-    <span>Lineaarinen PNS</span>
-    <span>Gauss–Newton-menetelmä</span>
-    <span>Parametrien estimointi</span>
-    <span>Epävarmuusanalyysi</span>
-    <span>Kokeellinen mekaniikka</span>
-    <span>Fysikaalinen mallintaminen</span>
-</div>
+        <ol>
+            <li>
+                Mitataan kappaleiden mitat, massat ja koejärjestelyn
+                geometria.
+            </li>
 
-<h2>Koejärjestely</h2>
+            <li>
+                Asetetaan kalteva taso tunnettuun kaltevuuskulmaan.
+            </li>
 
-<p>
-    Säädettävällä kaltevalla tasolla mitattiin kahta sylinteriä
-    ja yhtä suorakulmaista kappaletta. Sylintereiden mittaukset
-    tehtiin kymmenellä kaltevuuskulmalla 3 ja 30 asteen välillä.
-    Liukuva kappale vaati suurempia kulmia, koska lepokitka esti
-    liikkeen pienimmillä kaltevuuksilla.
-</p>
+            <li>
+                Mitataan kappaleen kulkuaika kahden valoportin välillä.
+            </li>
 
-<p>
-    Jokaiselle kappaleelle ja kaltevuuskulmalle tehtiin kuusi
-    toistomittausta. Kulkuaika määritettiin hetkestä, jolloin
-    kappaleen etureuna saavutti ensimmäisen valoportin, hetkeen,
-    jolloin se saavutti toisen valoportin.
-</p>
+            <li>Toistetaan jokainen mittaus useita kertoja.</li>
 
-<h2>Tulokset</h2>
+            <li>
+                Lasketaan mittausten keskiarvot ja epävarmuudet.
+            </li>
 
-<p>
-    Molempien sylinterien hitausmomentit ja liukuvan kappaleen
-    liikekitkakerroin pystyttiin estimoimaan kokeellisista
-    mittauksista.
-</p>
+            <li>
+                Muodostetaan liikeyhtälöihin perustuvat epälineaariset
+                havaintomallit.
+            </li>
 
-<p>
-    Tavallisen, painotetun ja linearisoidun estimoinnin vertailu
-    osoitti, kuinka havaintomallin valinta ja mittausepävarmuudet
-    vaikuttavat lopullisiin parametriestimaatteihin.
-</p>
+            <li>
+                Estimoidaan tuntemattomat parametrit epälineaarisella
+                PNS-menetelmällä.
+            </li>
 
-<h2>Projektissa osoitetut taidot</h2>
+            <li>
+                Sovelletaan mittausepävarmuuksiin perustuvaa painotettua
+                PNS-estimointia.
+            </li>
 
-<div class="tags">
-    <span>MATLAB</span>
-    <span>Data-analyysi</span>
-    <span>Parametrien estimointi</span>
-    <span>Matemaattinen mallintaminen</span>
-    <span>PNS-optimointi</span>
-    <span>Epävarmuusanalyysi</span>
-    <span>Koesuunnittelu</span>
-    <span>Mekaniikka</span>
-    <span>Tieteellinen raportointi</span>
-</div>
+            <li>
+                Linearisoidaan vierivän kappaleen malli ja suoritetaan
+                lineaarinen estimointi.
+            </li>
 
-<h2>Keskeiset opit</h2>
+            <li>
+                Verrataan kokeellisia estimaatteja teoreettisiin
+                parametriarvoihin.
+            </li>
+        </ol>
 
-<p>
-    Projekti syvensi ymmärrystäni fysikaalisten mallien ja
-    kokeellisen mittausdatan yhdistämisestä tuntemattomien
-    parametrien määrittämiseksi. Työ tarjosi käytännön kokemusta
-    epälineaarisesta optimoinnista, painotetusta estimoinnista,
-    mallien linearisoinnista ja mittausepävarmuuksien analysoinnista.
-</p>
+        <h2>Menetelmät</h2>
+
+        <div class="tags">
+            <span>MATLAB</span>
+            <span>Epälineaarinen PNS</span>
+            <span>Painotettu PNS</span>
+            <span>Lineaarinen PNS</span>
+            <span>Gauss–Newton-menetelmä</span>
+            <span>Parametrien estimointi</span>
+            <span>Epävarmuusanalyysi</span>
+            <span>Kokeellinen mekaniikka</span>
+            <span>Fysikaalinen mallintaminen</span>
+        </div>
+
+        <h2>Koejärjestely</h2>
+
+        <p>
+            Säädettävällä kaltevalla tasolla mitattiin kahta sylinteriä
+            ja yhtä suorakulmaista kappaletta. Sylinterien mittaukset
+            tehtiin kymmenellä kaltevuuskulmalla 3 ja 30 asteen välillä.
+            Liukuva kappale vaati suurempia kulmia, koska lepokitka esti
+            liikkeen pienimmillä kaltevuuksilla.
+        </p>
+
+        <p>
+            Jokaiselle kappaleelle ja kaltevuuskulmalle tehtiin kuusi
+            toistomittausta. Kulkuaika määritettiin hetkestä, jolloin
+            kappaleen etureuna saavutti ensimmäisen valoportin, hetkeen,
+            jolloin se saavutti toisen valoportin.
+        </p>
+
+        <h2>Tulokset</h2>
+
+        <p>
+            Molempien sylinterien hitausmomentit ja liukuvan kappaleen
+            liikekitkakerroin pystyttiin estimoimaan kokeellisten
+            mittausten perusteella.
+        </p>
+
+        <p>
+            Tavallisen, painotetun ja linearisoidun estimoinnin vertailu
+            osoitti, kuinka havaintomallin valinta ja mittausepävarmuudet
+            vaikuttavat lopullisiin parametriestimaatteihin.
+        </p>
+
+        <h2>Projektissa kehitetty osaaminen</h2>
+
+        <div class="tags">
+            <span>MATLAB</span>
+            <span>Data-analyysi</span>
+            <span>Parametrien estimointi</span>
+            <span>Matemaattinen mallintaminen</span>
+            <span>PNS-optimointi</span>
+            <span>Epävarmuusanalyysi</span>
+            <span>Koesuunnittelu</span>
+            <span>Mekaniikka</span>
+            <span>Tieteellinen raportointi</span>
+        </div>
+
+        <h2>Keskeiset opit</h2>
+
+        <p>
+            Projekti syvensi ymmärrystäni fysikaalisten mallien ja
+            kokeellisen mittausdatan yhdistämisestä tuntemattomien
+            parametrien määrittämiseksi. Työ tarjosi käytännön kokemusta
+            epälineaarisesta optimoinnista, painotetusta estimoinnista,
+            mallien linearisoinnista ja mittausepävarmuuksien
+            analysoinnista.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ville Kallinen</p>
+    </footer>
+
+</body>
+
+</html>
