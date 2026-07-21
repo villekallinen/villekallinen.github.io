@@ -1,244 +1,263 @@
-<p class="project-type">
+<!DOCTYPE html>
+<html lang="en">
 
-Computational Acoustics · University Collaboration
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</p>
-
-
-<h1 class="project-page-title">
-
-Low-Frequency Loudspeaker Placement
-Optimization in a Listening Room
-
-</h1>
-
-
-<p class="project-introduction">
-
-This project investigated how low-frequency loudspeaker
-placement affects the acoustic response of a listening room.
-The work combined finite element simulations, numerical
-optimization and acoustic measurements to identify loudspeaker
-positions that provide a more uniform low-frequency response
-at the listening position.
-
-The project was carried out in collaboration with Genelec Oy
-as part of a university acoustics project.
-
-</p>
-
-
-<div class="project-summary">
-
-<h2>Project Summary</h2>
-
-<table>
-
-<tr>
-<td><strong>Project</strong></td>
-<td>University Project</td>
-</tr>
-
-<tr>
-<td><strong>Collaboration</strong></td>
-<td>Genelec Oy</td>
-</tr>
-
-<tr>
-<td><strong>University</strong></td>
-<td>University of Eastern Finland</td>
-</tr>
-
-<tr>
-<td><strong>Year</strong></td>
-<td>2025–2026</td>
-</tr>
-
-<tr>
-<td><strong>Software</strong></td>
-<td>COMSOL Multiphysics, MATLAB</td>
-</tr>
-
-<tr>
-<td><strong>Main Topics</strong></td>
-<td>
-Room Acoustics<br>
-Finite Element Method (FEM)<br>
-Numerical Optimization
-</td>
-</tr>
-
-</table>
-
-</div>
-
-
-<img
-    class="project-main-image"
-    src="/images/room-acoustics/Boundary.png"
-    alt="Finite element geometry of the listening room in COMSOL"
->
-
-
-<h2>Project Overview</h2>
-
-<p>
-
-Low-frequency sound reproduction is strongly influenced by room
-geometry and standing wave phenomena. Poor loudspeaker
-placement may cause large variations in sound pressure levels,
-resulting in uneven bass reproduction.
-
-The objective of this project was to determine loudspeaker
-locations that minimize these variations using numerical
-simulation and optimization techniques.
-
-</p>
-
-
-<h2>My Contribution</h2>
-
-<ul>
-
-<li>Built a finite element acoustic model in COMSOL.</li>
-
-<li>Implemented room material models using impedance boundary conditions.</li>
-
-<li>Performed frequency-domain acoustic simulations.</li>
-
-<li>Implemented numerical optimization for loudspeaker placement.</li>
-
-<li>Compared simulation results with acoustic measurements.</li>
-
-<li>Analyzed room modes and frequency responses.</li>
-
-</ul>
-
-
-<h2>Simulation Workflow</h2>
-
-<ol>
-
-<li>Create room geometry.</li>
-
-<li>Assign acoustic material properties.</li>
-
-<li>Generate finite element mesh.</li>
-
-<li>Simulate acoustic pressure fields.</li>
-
-<li>Evaluate listening position response.</li>
-
-<li>Optimize loudspeaker locations.</li>
-
-<li>Validate results with measurements.</li>
-
-</ol>
-
-<h2>Acoustic Simulation</h2>
-
-<p>
-    The finite element model was used to calculate the spatial
-    distribution of sound pressure levels in the room. The simulations
-    revealed how room geometry and boundary conditions influence the
-    low-frequency sound field and create regions of amplification and
-    cancellation.
-</p>
-
-<figure class="project-figure">
-    <img
-        src="/images/room-acoustics/OriginallocationsSPL.png"
-        alt="Simulated sound pressure level distribution in the listening room"
+    <meta
+        name="description"
+        content="Computational acoustics project investigating low-frequency loudspeaker placement optimization using finite element simulations and acoustic measurements."
     >
 
-    <figcaption>
-        Simulated sound pressure level distribution in the room for
-        the original loudspeaker locations.
-    </figcaption>
-</figure>
+    <title>Loudspeaker Placement Optimization | Ville Kallinen</title>
 
+    <link rel="stylesheet" href="../style.css">
+</head>
 
-<h2>Technologies</h2>
+<body>
 
-<div class="tags">
+    <header class="project-hero">
+        <div class="project-hero-inner">
 
-<span>COMSOL</span>
+            <a class="project-back" href="../index.html#projects">
+                ← Back to projects
+            </a>
 
-<span>MATLAB</span>
+            <p class="project-type">
+                Computational Acoustics · University Collaboration
+            </p>
 
-<span>Acoustics</span>
+            <h1 class="project-page-title">
+                Low-Frequency Loudspeaker Placement Optimization
+                in a Listening Room
+            </h1>
 
-<span>Finite Element Method</span>
+            <div class="project-introduction">
+                <p>
+                    This project investigated how low-frequency loudspeaker
+                    placement affects the acoustic response of a listening
+                    room. The work combined finite element simulations,
+                    numerical optimization and acoustic measurements to
+                    identify loudspeaker positions that provide a more uniform
+                    low-frequency response around the listening position.
+                </p>
 
-<span>Optimization</span>
+                <p>
+                    The project was carried out in collaboration with Genelec Oy
+                    as part of a university acoustics project.
+                </p>
+            </div>
 
-<span>Room Simulation</span>
+        </div>
+    </header>
 
-</div>
+    <main class="project-page">
 
+        <section class="project-summary">
 
-<h2>Simulation Results</h2>
+            <h2>Project Summary</h2>
 
-<p>
-    The frequency responses were evaluated at both ears while the
-    listener position was varied around the nominal listening
-    location. The original and optimized loudspeaker configurations
-    were then compared across the investigated frequency range.
-</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Project</th>
+                        <td>University Project</td>
+                    </tr>
 
-<figure class="project-figure project-figure-half">
-    <img
-        src="/images/room-acoustics/MovinListenerSimulations.png"
-        alt="Comparison of simulated sound pressure levels for original and optimized loudspeaker locations"
-    >
+                    <tr>
+                        <th scope="row">Collaboration</th>
+                        <td>Genelec Oy</td>
+                    </tr>
 
-    <figcaption>
-        Simulated left- and right-ear sound pressure levels for
-        different listener positions. The optimized loudspeaker
-        locations reduce the strong low-frequency variation compared
-        with the original configuration.
-    </figcaption>
-</figure>
+                    <tr>
+                        <th scope="row">University</th>
+                        <td>University of Eastern Finland</td>
+                    </tr>
 
-<h2>Project Outcome</h2>
+                    <tr>
+                        <th scope="row">Year</th>
+                        <td>2025–2026</td>
+                    </tr>
 
-<p>
-    The optimized loudspeaker locations produced a more uniform
-    low-frequency response around the listening position. In
-    particular, the optimization reduced the pronounced response
-    variations caused by room modes and improved the consistency
-    between nearby listener positions.
-</p>
+                    <tr>
+                        <th scope="row">Software</th>
+                        <td>COMSOL Multiphysics and MATLAB</td>
+                    </tr>
 
+                    <tr>
+                        <th scope="row">Main topics</th>
+                        <td>
+                            Room acoustics<br>
+                            Finite Element Method (FEM)<br>
+                            Numerical optimization
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-<h2>Skills Demonstrated</h2>
+        </section>
 
-<div class="tags">
+        <figure class="project-figure">
+            <img
+                src="../images/room-acoustics/Boundary.png"
+                alt="Finite element geometry of the listening room in COMSOL"
+            >
 
-<span>COMSOL</span>
+            <figcaption>
+                Finite element geometry and acoustic boundary conditions
+                used in the COMSOL room model.
+            </figcaption>
+        </figure>
 
-<span>Finite Element Analysis</span>
+        <h2>Project Overview</h2>
 
-<span>Numerical Optimization</span>
+        <p>
+            Low-frequency sound reproduction is strongly influenced by room
+            geometry, boundary materials and standing-wave phenomena. Poor
+            loudspeaker placement may cause large variations in sound pressure
+            levels, resulting in uneven bass reproduction.
+        </p>
 
-<span>Room Acoustics</span>
+        <p>
+            The objective of the project was to determine loudspeaker
+            locations that minimize these variations using numerical
+            simulation and optimization techniques.
+        </p>
 
-<span>MATLAB</span>
+        <h2>My Contribution</h2>
 
-<span>Scientific Computing</span>
+        <ul>
+            <li>Built a finite element acoustic model in COMSOL.</li>
 
-<span>Experimental Validation</span>
+            <li>
+                Implemented room material models using impedance boundary
+                conditions.
+            </li>
 
-</div>
+            <li>Performed frequency-domain acoustic simulations.</li>
 
+            <li>
+                Implemented numerical optimization for loudspeaker placement.
+            </li>
 
-<h2>Future Work</h2>
+            <li>
+                Compared simulation results with acoustic measurements.
+            </li>
 
-<p>
+            <li>Analyzed room modes and frequency responses.</li>
+        </ul>
 
-Future work could include optimizing multiple listening
-positions simultaneously, investigating additional acoustic
-treatments and extending the optimization to higher frequency
-ranges.
+        <h2>Simulation Workflow</h2>
 
-</p>
+        <ol>
+            <li>Create the room geometry.</li>
+
+            <li>Assign acoustic material properties.</li>
+
+            <li>Generate the finite element mesh.</li>
+
+            <li>Simulate acoustic pressure fields.</li>
+
+            <li>Evaluate the response around the listening position.</li>
+
+            <li>Optimize the loudspeaker locations.</li>
+
+            <li>Validate the results using acoustic measurements.</li>
+        </ol>
+
+        <h2>Acoustic Simulation</h2>
+
+        <p>
+            The finite element model was used to calculate the spatial
+            distribution of sound pressure levels in the room. The
+            simulations revealed how room geometry and boundary conditions
+            influence the low-frequency sound field and create regions of
+            amplification and cancellation.
+        </p>
+
+        <figure class="project-figure">
+            <img
+                src="../images/room-acoustics/OriginallocationsSPL.png"
+                alt="Simulated sound pressure level distribution in the listening room"
+            >
+
+            <figcaption>
+                Simulated sound pressure level distribution in the room
+                using the original loudspeaker locations.
+            </figcaption>
+        </figure>
+
+        <h2>Technologies</h2>
+
+        <div class="tags">
+            <span>COMSOL</span>
+            <span>MATLAB</span>
+            <span>Acoustics</span>
+            <span>Finite Element Method</span>
+            <span>Numerical Optimization</span>
+            <span>Room Simulation</span>
+        </div>
+
+        <h2>Simulation Results</h2>
+
+        <p>
+            The frequency responses were evaluated at both ears while the
+            listener position was varied around the nominal listening
+            location. The original and optimized loudspeaker configurations
+            were then compared across the investigated frequency range.
+        </p>
+
+        <figure class="project-figure project-figure-half">
+            <img
+                src="../images/room-acoustics/MovinListenerSimulations.png"
+                alt="Comparison of simulated sound pressure levels for original and optimized loudspeaker locations"
+            >
+
+            <figcaption>
+                Simulated left- and right-ear sound pressure levels at
+                different listener positions. The optimized loudspeaker
+                locations reduce strong low-frequency variation compared
+                with the original configuration.
+            </figcaption>
+        </figure>
+
+        <h2>Project Outcome</h2>
+
+        <p>
+            The optimized loudspeaker locations produced a more uniform
+            low-frequency response around the listening position. In
+            particular, the optimization reduced pronounced response
+            variations caused by room modes and improved consistency between
+            nearby listener positions.
+        </p>
+
+        <h2>Skills Demonstrated</h2>
+
+        <div class="tags">
+            <span>COMSOL</span>
+            <span>Finite Element Analysis</span>
+            <span>Numerical Optimization</span>
+            <span>Room Acoustics</span>
+            <span>MATLAB</span>
+            <span>Scientific Computing</span>
+            <span>Experimental Validation</span>
+        </div>
+
+        <h2>Future Work</h2>
+
+        <p>
+            Future work could include optimizing multiple listening positions
+            simultaneously, investigating additional acoustic treatments and
+            extending the optimization to higher frequency ranges.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ville Kallinen</p>
+    </footer>
+
+</body>
+
+</html>
